@@ -102,3 +102,19 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# Windows
+*Thumbs.db
+*.DS_Store
+
+# R
+*.RData
+*.Rhistory
+*.tmp
+
+# Other
+.idea/
+
+# Stata
+*.gph
+*.log
