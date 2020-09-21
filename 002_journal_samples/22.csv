@@ -1,237 +1,538 @@
 Sourceid,Title,SJR,field,octile
+12133,Hydrometallurgy,1.208,22,8
+12202,Intermetallics,1.568,22,8
+12246,Structural Control and Health Monitoring,1.446,22,8
 12274,Progress in Aerospace Sciences,1.716,22,8
 12330,Journal of Materials Science and Technology,1.138,22,8
 12336,International Journal for Numerical Methods in Engineering,1.623,22,8
 12342,International Journal of Control,1.152,22,8
+12349,International Journal of Engineering Science,2.82,22,8
+12360,International Journal of General Systems,1.665,22,8
 12383,International Journal of Impact Engineering,2.124,22,8
 12481,Journal of Engineering Education,2.687,22,8
 12490,Journal of Fluids and Structures,1.481,22,8
+12512,Journal of Management in Engineering - ASCE,1.233,22,8
+12996,IEEE Signal Processing Magazine,1.747,22,8
+12998,"IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control",1.183,22,8
+13030,Journal of Sound and Vibration,1.36,22,8
 13037,Annual Review of Biomedical Engineering,4.251,22,8
 13182,Progress in Nuclear Energy,1.239,22,8
 13549,Journal of Atmospheric and Oceanic Technology,1.285,22,8
 13688,Applied Thermal Engineering,1.505,22,8
+13761,International Journal of Thermal Sciences,1.429,22,8
 13853,Reliability Engineering and System Safety,1.665,22,8
+13877,"European Journal of Mechanics, A/Solids",1.676,22,8
 14398,International Journal of Solids and Structures,1.295,22,8
 14422,Journal of Non-Newtonian Fluid Mechanics,1.14,22,8
+14423,Journal of Rheology,1.326,22,8
+14428,Journal of the Mechanics and Physics of Solids,1.988,22,8
 14588,Theoretical and Applied Fracture Mechanics,1.138,22,8
 14642,Tunnelling and Underground Space Technology,1.696,22,8
 14726,Technovation,2.007,22,8
+14966,Journal of Manufacturing Systems,1.548,22,8
+15041,Coastal Engineering,1.767,22,8
+15063,Composite Structures,1.905,22,8
+15134,Information Sciences,1.635,22,8
 15163,Applied Mechanics Reviews,2.451,22,8
+15437,Biosensors and Bioelectronics,2.373,22,8
 15579,Current Opinion in Biotechnology,3.202,22,8
+15652,Engineering Structures,1.69,22,8
 15846,Journal of Biomechanics,1.147,22,8
 15995,Composites Science and Technology,1.702,22,8
 16088,Journal of Nanobiotechnology,1.38,22,8
+16113,International Journal of Refrigeration,1.471,22,8
+16115,Nature Biotechnology,18.252,22,8
+16214,International Journal for Numerical and Analytical Methods in Geomechanics,1.452,22,8
+16259,Journal of Composites for Construction,1.84,22,8
+16274,Journal of Constructional Steel Research,1.892,22,8
+16294,Biomechanics and Modeling in Mechanobiology,1.138,22,8
 16305,Journal of Structural Engineering,1.74,22,8
 16318,IEEE Transactions on Biomedical Engineering,1.267,22,8
 16321,IEEE Transactions on Neural Systems and Rehabilitation Engineering,1.152,22,8
 16322,Desalination,1.955,22,8
+16398,Chemical Engineering Journal,1.863,22,8
+16520,Journal of Advanced Concrete Technology,1.139,22,8
 16733,IEEE Transactions on Medical Imaging,1.895,22,8
+16876,Bioconjugate Chemistry,1.801,22,8
 16936,Minerals Engineering,1.248,22,8
+17139,Materials and Structures/Materiaux et Constructions,1.383,22,8
 17249,IEEE Communications Magazine,2.297,22,8
+17259,IEEE Geoscience and Remote Sensing Letters,1.486,22,8
+17278,IEEE Journal of Solid-State Circuits,1.665,22,8
 17337,IEEE Transactions on Antennas and Propagation,1.309,22,8
 17339,IEEE Transactions on Automatic Control,3.433,22,8
+17340,IEEE Transactions on Automation Science and Engineering,1.306,22,8
+17342,IEEE Transactions on Control Systems Technology,1.832,22,8
+17360,IEEE Transactions on Geoscience and Remote Sensing,2.649,22,8
 17370,IEEE Transactions on Power Delivery,1.814,22,8
+17387,IEEE Transactions on Reliability,1.444,22,8
+17391,IEEE Transactions on Signal Processing,1.247,22,8
 17392,Soils and Foundations,1.159,22,8
 17458,European Cells and Materials,1.345,22,8
+17470,Structural Safety,1.899,22,8
 17797,Materials and Design,1.82,22,8
+17811,"Materials Science & Engineering A: Structural Materials: Properties, Microstructure and Processing",1.694,22,8
 17814,Materials Science and Engineering: R: Reports,8.408,22,8
+17828,Mechanics of Materials,1.248,22,8
 17852,NDT and E International,1.205,22,8
 17853,Nano Letters,7.447,22,8
+17854,Nature Materials,18.263,22,8
+17915,Proceedings of the IEEE,1.38,22,8
 17985,International Journal of Electrical Power and Energy Systems,1.276,22,8
+17987,International Journal of Robust and Nonlinear Control,2.028,22,8
 18050,International Journal of Robotics Research,2.471,22,8
 18063,Journal of Power Sources,2.202,22,8
+18089,Advances in Engineering Software,1.159,22,8
+18144,Computer-Aided Civil and Infrastructure Engineering,1.154,22,8
+18158,Computer Methods in Applied Mechanics and Engineering,2.883,22,8
 18164,Computers and Industrial Engineering,1.463,22,8
+18171,Computers and Structures,1.63,22,8
+18189,Finite Elements in Analysis and Design,1.129,22,8
+18378,IEEE Transactions on Intelligent Transportation Systems,1.175,22,8
 18380,Tribology Letters,1.204,22,8
+18534,International Journal for Numerical Methods in Fluids,1.183,22,8
+18537,Journal of Fluid Mechanics,1.591,22,8
+18539,Journal of Hydraulic Research/De Recherches Hydrauliques,1.168,22,8
 18658,Production Planning and Control,1.256,22,8
+18661,Structural and Multidisciplinary Optimization,1.458,22,8
+18853,Water Resources Management,1.185,22,8
+18902,IEEE Journal on Selected Areas in Communications,1.741,22,8
 18933,IEEE Transactions on Wireless Communications,1.246,22,8
 18935,IEEE Wireless Communications,1.878,22,8
+19113,IEEE/ASME Transactions on Mechatronics,1.537,22,8
+19164,International Journal of Machine Tools and Manufacture,2.7,22,8
+19165,International Journal of Production Economics,2.401,22,8
+19167,Journal of Cleaner Production,1.467,22,8
+19169,Journal of Operations Management,5.739,22,8
+19532,Accident Analysis and Prevention,1.462,22,8
 19732,Osteoarthritis and Cartilage,2.497,22,8
+19760,International Journal of Food Microbiology,1.366,22,8
 19804,CIRP Annals - Manufacturing Technology,2.034,22,8
 19881,Advanced Materials,10.579,22,8
+20058,Innovative Food Science and Emerging Technologies,1.201,22,8
 20307,Engineering Analysis with Boundary Elements,1.219,22,8
+20327,Experiments in Fluids,1.281,22,8
 20446,International Journal of Engine Research,1.315,22,8
 20448,International Journal of Heat and Mass Transfer,1.498,22,8
 20450,International Journal of Multiphase Flow,1.218,22,8
+20540,Composites Part A: Applied Science and Manufacturing,1.539,22,8
 20541,Computational Materials Science,1.766,22,8
 20594,Engineering Fracture Mechanics,1.244,22,8
+20864,Transportation,1.911,22,8
 20891,Transportation Research Part A: Policy and Practice,1.939,22,8
+20892,Transportation Research Part B: Methodological,3.109,22,8
+20893,"Transportation Research, Part C: Emerging Technologies",2.293,22,8
+20894,Transportation Research Part D: Transport and Environment,1.359,22,8
+20896,Telematics and Informatics,1.299,22,8
 20897,Transportation Research Part F: Traffic Psychology and Behaviour,1.462,22,8
+20909,Transportation Research Part E: Logistics and Transportation Review,1.901,22,8
+20910,Transportation Science,3.312,22,8
+20928,Environmental and Resource Economics,1.186,22,8
 20949,"Journal of Applied Mechanics, Transactions ASME",1.133,22,8
+20966,"Journal of Manufacturing Science and Engineering, Transactions of the ASME",1.181,22,8
 20969,Journal of Machine Learning Research,1.271,22,8
 20972,Journal of Materials Processing Technology,1.695,22,8
+21052,Marine Structures,2.049,22,8
+21080,Mechanical Systems and Signal Processing,1.805,22,8
+21094,Mechanism and Machine Theory,1.301,22,8
 21105,International Journal of Fatigue,1.402,22,8
 21117,International Journal of Plasticity,3.395,22,8
+21119,International Materials Reviews,4.27,22,8
+21184,Journal of Quality Technology,1.814,22,8
+21431,Indoor Air,1.437,22,8
 21576,Nonlinear Dynamics,1.468,22,8
+21780,Nonlinear Analysis: Real World Applications,1.627,22,8
 21955,Critical Reviews in Food Science and Nutrition,1.596,22,8
 22030,Canadian Geotechnical Journal,1.813,22,8
 22094,Thin-Walled Structures,1.672,22,8
+22116,Tribology International,1.52,22,8
+22153,Vehicle System Dynamics,1.17,22,8
 22156,Wear,1.386,22,8
+22405,Production and Operations Management,3.379,22,8
+22900,Research Policy,3.688,22,8
+23127,Journal of the ACM,1.208,22,8
+23490,Journal of Scientific Computing,1.675,22,8
 23715,Science Technology and Human Values,1.596,22,8
+23811,Cement and Concrete Composites,3.146,22,8
 23833,Cement and Concrete Research,4.223,22,8
+24201,Expert Systems with Applications,1.271,22,8
+24242,IEEE Transactions on Fuzzy Systems,4.024,22,8
+24363,Journal of Intelligent Manufacturing,1.179,22,8
+24443,Construction and Building Materials,1.607,22,8
+24738,Lab on a Chip - Miniaturisation for Chemistry and Biology,2.158,22,8
 24769,Materials Today,7.111,22,8
+24909,Automatica,3.896,22,8
+24931,Automation in Construction,1.613,22,8
+24936,Dental Materials,2.106,22,8
+25161,ACI Structural Journal,1.233,22,8
 25208,Archive for Rational Mechanics and Analysis,3.93,22,8
+25236,"Sensors and Actuators, B: Chemical",1.406,22,8
 25406,European Journal of Control,1.174,22,8
 25563,Systems and Control Letters,1.939,22,8
 25663,Journal of Ship Research,1.131,22,8
+26005,IEEE Electron Device Letters,1.361,22,8
+26053,IEEE Transactions on Industrial Electronics,2.192,22,8
 26055,IEEE Transactions on Power Electronics,2.215,22,8
+26252,Maritime Policy and Management,1.129,22,8
+26268,Rock Mechanics and Rock Engineering,2.328,22,8
 26776,Applied Ocean Research,1.267,22,8
+26874,Building and Environment,2.169,22,8
+26880,Proceedings of the Combustion Institute,2.588,22,8
+26939,Building Research and Information,1.141,22,8
 27130,Progress in Quantum Electronics,3.999,22,8
 27289,Materials Characterization,1.291,22,8
 27476,Critical Reviews in Solid State and Materials Sciences,1.51,22,8
+27540,Progress in Photovoltaics: Research and Applications,1.772,22,8
 27545,European Physical Journal C,2.022,22,8
+27656,International Journal of Production Research,1.432,22,8
+27677,Journal of Manufacturing Processes,1.166,22,8
 27679,Journal of Product Innovation Management,3.043,22,8
+27959,Journal of the Franklin Institute,1.322,22,8
+28200,Biomaterials,3.111,22,8
 28339,Ocean Engineering,1.284,22,8
+28423,Steel and Composite Structures,1.141,22,8
+28457,Computational Mechanics,1.775,22,8
+28523,Terrorism and Political Violence,1.163,22,8
 28635,Composites Part B: Engineering,2.039,22,8
+28801,Applied Energy,3.162,22,8
+28824,IEEE Transactions on Energy Conversion,1.377,22,8
 28825,IEEE Transactions on Power Systems,2.742,22,8
 29161,ISPRS Journal of Photogrammetry and Remote Sensing,3.169,22,8
+29220,Experimental Thermal and Fluid Science,1.271,22,8
 29284,Journal of Safety Research,1.151,22,8
+29348,Energy,1.99,22,8
 29359,Energy and Buildings,2.061,22,8
 29859,Smart Materials and Structures,1.152,22,8
 50054,Journal of Water Resources Planning and Management - ASCE,1.291,22,8
+50170,International Journal of Mechanical Sciences,1.595,22,8
 58130,Journal of the Energy Institute,1.179,22,8
+82360,Journal of Nonlinear Science,1.568,22,8
+93180,Organogenesis,1.32,22,8
+95101,IEEE Transactions on Robotics,1.822,22,8
+110486,Journal of Wind Engineering and Industrial Aerodynamics,1.264,22,8
+130164,Journal of Neural Engineering,1.42,22,8
 144651,Journal of Technology Transfer,1.358,22,8
+144889,Journal of Intelligent Transportation Systems,1.288,22,8
 144912,IEEE Transactions on Industrial Informatics,1.599,22,8
 145209,Bulletin of Earthquake Engineering,1.522,22,8
 145213,Extremes,1.562,22,8
+200147125,"Learning, Media and Technology",2.298,22,8
 3200147828,Small,3.83,22,8
 3300147809,Acta Biomaterialia,1.967,22,8
 4000149002,IEEE Transactions on Information Forensics and Security,1.274,22,8
 4000149101,"Nanomedicine: Nanotechnology, Biology, and Medicine",1.743,22,8
 4000151907,Journal of the Royal Society Interface,1.723,22,8
+4400151737,Limnology and Oceanography: Methods,1.129,22,8
+4700152301,Journal of Field Robotics,1.45,22,8
 4700152457,Nano Today,7.191,22,8
 5100154503,Road Materials and Pavement Design,1.143,22,8
 5100155079,IET Control Theory and Applications,1.416,22,8
+5200152704,Nature Nanotechnology,20.612,22,8
 5400152706,Nanotoxicology,1.63,22,8
 5800173379,Virtual and Physical Prototyping,1.438,22,8
+5800207505,IEEE Industrial Electronics Magazine,1.978,22,8
+5900153311,IEEE Journal on Selected Topics in Signal Processing,1.331,22,8
+6100152802,Nanomedicine,1.302,22,8
+6200180161,International Journal of Greenhouse Gas Control,1.458,22,8
+9000153105,Nonlinear Analysis: Hybrid Systems,1.82,22,8
 9500153997,Polymer Reviews,1.787,22,8
+11400153316,Tissue Engineering - Part A,1.159,22,8
+11500153511,ACS Nano,7.203,22,8
 11700154619,Journal of Biological Engineering,1.34,22,8
 11700154648,Tissue Engineering - Part B: Reviews,1.593,22,8
 12300154704,CIRP Journal of Manufacturing Science and Technology,1.377,22,8
 14200154736,Food and Bioprocess Technology,1.29,22,8
+17500155020,Nano Research,3.064,22,8
 17600155106,Flexible Services and Manufacturing Journal,1.633,22,8
 17900156715,IEEE Communications Surveys and Tutorials,3.661,22,8
+19600157019,IEEE Reviews in Biomedical Engineering,1.616,22,8
 19600166327,Food Engineering Reviews,1.639,22,8
 19700166902,Wiley interdisciplinary reviews. Nanomedicine and nanobiotechnology,1.987,22,8
 19700173005,Cancer Nanotechnology,1.168,22,8
+19700174684,Journal of diabetes science and technology,1.256,22,8
+19700174711,SAE International Journal of Engines,1.455,22,8
+19700175167,Frontiers in Neuroinformatics,2.45,22,8
+19700175169,Frontiers in Neuroengineering,1.23,22,8
+19700178100,"Nanotechnology, Science and Applications",2.723,22,8
 19700182678,Polymer Chemistry,1.778,22,8
+19700182917,Biofabrication,1.643,22,8
 19700190315,Beilstein Journal of Nanotechnology,1.119,22,8
+19900193578,IEEE Journal of Photovoltaics,1.214,22,8
+21100197947,Nano Energy,5.185,22,8
 21100203115,Nano-Micro Letters,1.554,22,8
+21100218328,Global Food Security,1.809,22,8
+21100218506,ACS Synthetic Biology,2.625,22,8
+21100225611,Advanced healthcare materials,1.989,22,8
 21100229202,Journal of Materials Chemistry B,1.561,22,8
 21100237201,Transportmetrica A: Transport Science,1.454,22,8
+21100247072,Biomaterials Science,1.604,22,8
 21100262320,"IEEE Transactions on Systems, Man, and Cybernetics: Systems",1.303,22,8
+21100269013,Nanophotonics,2.916,22,8
+21100274221,IEEE Transactions on Cybernetics,3.274,22,8
+21100283796,Manufacturing Letters,1.313,22,8
 21100310046,APL Materials,1.63,22,8
+21100331504,International Review of Aerospace Engineering,1.148,22,8
+21100338322,IEEE Geoscience and Remote Sensing Magazine,1.742,22,8
+21100338359,IEEE Journal of Emerging and Selected Topics in Power Electronics,1.657,22,8
 21100383743,International Journal of Concrete Structures and Materials,1.601,22,8
+21100835954,Frontiers in Bioengineering and Biotechnology,1.565,22,8
 12116,IEEE Photonics Technology Letters,0.961,22,7
 12148,ISIJ International,0.961,22,7
+12156,Journal of Biomedical Optics,0.918,22,7
+12160,Journal of Laser Applications,0.741,22,7
 12219,International Journal of Refractory Metals and Hard Materials,1.052,22,7
+12278,Superconductor Science and Technology,1.036,22,7
 12302,JOM,1.054,22,7
+12325,Journal of Alloys and Compounds,1.02,22,7
 12332,Safety Science,1.113,22,7
+12346,Optics and Laser Technology,0.737,22,7
 12348,Optics and Lasers in Engineering,1.018,22,7
+12367,Photogrammetric Record,0.863,22,7
 12372,Acta Astronautica,0.758,22,7
 12419,International Journal of Systems Science,0.763,22,7
+12479,Journal of Engineering Design,0.727,22,7
+12507,Aerospace Science and Technology,0.796,22,7
 12689,Information Processing and Management,0.92,22,7
+12921,European Journal of Lipid Science and Technology,0.776,22,7
+13034,JVC/Journal of Vibration and Control,0.763,22,7
+13057,Industrial & Engineering Chemistry Research,0.978,22,7
+13185,Computing in Science and Engineering,0.748,22,7
 13559,Journal of Loss Prevention in the Process Industries,0.808,22,7
 13660,"Sensors and Actuators, A: Physical",0.699,22,7
+13712,Continuum Mechanics and Thermodynamics,0.978,22,7
+13754,"Process Safety and Environmental Protection: Transactions of the Institution of Chemical Engineers, Part B",0.804,22,7
+13759,International Journal of Heat and Fluid Flow,0.947,22,7
+13790,Precision Engineering,0.98,22,7
 13832,Quality Engineering,0.804,22,7
 13858,"Research in Engineering Design - Theory, Applications, and Concurrent Engineering",1.024,22,7
+13896,Construction Management and Economics,0.816,22,7
 13929,Applied Ergonomics,1.071,22,7
+13952,Archive of Applied Mechanics,0.79,22,7
+14372,Tribology Transactions,0.836,22,7
 14414,Journal of Process Control,1.108,22,7
 14471,Meccanica,0.814,22,7
+14523,Multibody System Dynamics,0.949,22,7
 14571,Shock Waves,0.853,22,7
+14614,Yanshilixue Yu Gongcheng Xuebao/Chinese Journal of Rock Mechanics and Engineering,0.92,22,7
+14617,Yantu Lixue/Rock and Soil Mechanics,0.731,22,7
 15361,IEEE Transactions on Instrumentation and Measurement,0.938,22,7
 15424,Measurement: Journal of the International Measurement Confederation,0.733,22,7
 15530,Power System Technology,0.696,22,7
+15834,Packaging Technology and Science,0.783,22,7
+15845,Journal of Biomechanical Engineering,0.849,22,7
 15961,Naval Research Logistics,0.961,22,7
+16044,Electric Power Systems Research,1.048,22,7
+16074,Journal of Biomedical Materials Research - Part B Applied Biomaterials,0.715,22,7
 16211,IEEE Transactions on Multimedia,0.954,22,7
+16215,International Journal of Numerical Methods for Heat and Fluid Flow,0.697,22,7
+16216,International Journal of Pavement Engineering,0.869,22,7
+16273,Journal of Construction Engineering and Management - ASCE,1.023,22,7
 16276,Journal of Earthquake Engineering,0.926,22,7
 16279,Journal of Engineering Mechanics - ASCE,0.779,22,7
+16283,Journal of Hydraulic Engineering,1.023,22,7
+16284,Journal of Hydrologic Engineering - ASCE,0.89,22,7
+16299,Journal of Materials in Civil Engineering,1.034,22,7
+16392,Chemical Engineering and Processing - Process Intensification,0.872,22,7
+16413,Chemical Engineering Science,1.043,22,7
+16430,Meitan Xuebao/Journal of the China Coal Society,0.864,22,7
 16521,Journal of Bridge Engineering,1.081,22,7
 16552,School Library Media Research,0.786,22,7
 16849,Biochemical Engineering Journal,0.87,22,7
+16934,Minerals and Metallurgical Processing,0.754,22,7
 17014,Journal of Tribology,0.767,22,7
 17049,Physiological Measurement,0.731,22,7
+17096,Magazine of Concrete Research,0.858,22,7
+17135,Materiales de Construccion,0.903,22,7
+17264,Magnetic Resonance Imaging,1.063,22,7
+17276,Journal of Microelectromechanical Systems,0.734,22,7
+17277,IEEE Journal of Oceanic Engineering,0.697,22,7
+17295,IEEE Microwave and Wireless Components Letters,0.73,22,7
 17316,IEEE Signal Processing Letters,0.732,22,7
+17359,IEEE Transactions on Engineering Management,0.734,22,7
+17361,IEEE Transactions on Industry Applications,1.02,22,7
+17366,IEEE Transactions on Microwave Theory and Techniques,1.0,22,7
 17371,IEEE Transactions on Professional Communication,0.845,22,7
+17393,IEEE Transactions on Vehicular Technology,0.75,22,7
+17442,Structural Concrete,1.031,22,7
 17443,Structural Design of Tall and Special Buildings,0.721,22,7
 17812,Materials Science & Engineering B: Solid-State Materials for Advanced Technology,0.779,22,7
+17813,Materials Science and Engineering C,1.11,22,7
+17815,Materials Science and Technology,0.889,22,7
 17827,Mechanics of Advanced Materials and Structures,0.878,22,7
+17829,Mechanics Research Communications,0.814,22,7
+17882,Nuclear Engineering and Design,1.061,22,7
 17960,International Journal of Adaptive Control and Signal Processing,0.915,22,7
+17967,Strain,0.805,22,7
 18027,IEEE Robotics and Automation Magazine,0.754,22,7
+18079,Robotics and Autonomous Systems,0.711,22,7
+18080,Robotics and Computer-Integrated Manufacturing,1.041,22,7
 18145,CAD Computer Aided Design,1.025,22,7
+18160,Computers and Fluids,1.077,22,7
 18174,Control Engineering Practice,1.069,22,7
 18198,International Journal of Computer Integrated Manufacturing,0.773,22,7
 18280,PCI Journal,0.897,22,7
 18405,Educational Technology and Society,1.087,22,7
 18477,Cell Transplantation,1.023,22,7
+18538,"Journal of Fluids Engineering, Transactions of the ASME",0.884,22,7
+18643,Journal of Computing in Civil Engineering,0.697,22,7
+18644,Journal of Manufacturing Technology Management,0.867,22,7
 18663,"Organic Electronics: physics, materials, applications",1.085,22,7
+18894,IEEE Antennas and Wireless Propagation Letters,1.047,22,7
+18931,IEEE Transactions on Communications,1.004,22,7
+19010,Stochastic Environmental Research and Risk Assessment,1.096,22,7
+19080,Computers in Industry,1.028,22,7
+19123,Quality and Reliability Engineering International,0.955,22,7
 19170,Industrial Management and Data Systems,0.904,22,7
 19202,"Mathematics of Control, Signals, and Systems",0.855,22,7
+19294,Journal of Scheduling,1.117,22,7
+19747,Acta Mechanica,1.04,22,7
+19806,Chinese Journal of Mechanical Engineering (English Edition),0.928,22,7
+19853,Zhongguo Dianji Gongcheng Xuebao/Proceedings of the Chinese Society of Electrical Engineering,0.909,22,7
 19901,IEEE Transactions on Broadcasting,0.941,22,7
 19990,International Journal of Industrial Organization,0.873,22,7
+20115,International Journal of Food Science and Technology,0.909,22,7
 20410,"Proceedings of the Institution of Mechanical Engineers, Part J: Journal of Engineering Tribology",0.725,22,7
+20428,International Journal of Advanced Manufacturing Technology,0.994,22,7
 20453,International Journal of Pressure Vessels and Piping,0.981,22,7
+20575,Journal of Engineering and Technology Management - JET-M,0.937,22,7
+20593,Engineering Failure Analysis,0.933,22,7
+20621,Experimental Mechanics,0.947,22,7
 20870,Telecommunications Policy,0.787,22,7
+20968,Journal of Heat Transfer,0.759,22,7
+20979,Journal of Mechanical Design - Transactions of the ASME,0.895,22,7
+20984,"Proceedings of the Institution of Mechanical Engineers, Part K: Journal of Multi-body Dynamics",0.756,22,7
 20985,Journal of Offshore Mechanics and Arctic Engineering,1.038,22,7
+20988,Journal of Turbomachinery,0.797,22,7
 21054,Materials and Manufacturing Processes,0.948,22,7
 21096,Mechatronics,0.79,22,7
 21098,International Journal of Damage Mechanics,0.872,22,7
 21107,International Journal of Fracture,0.916,22,7
 21116,International Journal of Non-Linear Mechanics,1.032,22,7
+21152,Journal of Elasticity,0.899,22,7
+21157,Journal of Intelligent Material Systems and Structures,0.828,22,7
 21162,Journal of Materials Science,0.807,22,7
 21179,Journal of Nondestructive Evaluation,0.773,22,7
+21187,Journal of Sandwich Structures and Materials,0.998,22,7
+21389,International Journal of Technology and Design Education,0.702,22,7
 21579,"Numerical Heat Transfer, Part B: Fundamentals",0.851,22,7
 21643,Probabilistic Engineering Mechanics,0.89,22,7
 21691,Rapid Prototyping Journal,0.968,22,7
 22949,Research Technology Management,0.722,22,7
+23068,European Food Research and Technology,0.737,22,7
 23646,Journal of Science Education and Technology,0.77,22,7
+23969,"Proceedings of the Institution of Mechanical Engineers, Part D: Journal of Automobile Engineering",0.729,22,7
 24182,Engineering Applications of Artificial Intelligence,0.874,22,7
+24709,Materials Research Bulletin,0.746,22,7
 24831,Quantum Information Processing,0.708,22,7
+25038,IEEE Transactions on Mobile Computing,0.82,22,7
 25159,ACI Materials Journal,0.994,22,7
+25204,Advances in Cement Research,0.841,22,7
 25397,Dianli Xitong Zidonghua/Automation of Electric Power Systems,0.758,22,7
+25529,Optimal Control Applications and Methods,0.825,22,7
+25548,Signal Processing,0.94,22,7
+25955,"ESAIM - Control, Optimisation and Calculus of Variations",1.05,22,7
+26023,IEEE Journal on Selected Topics in Quantum Electronics,1.116,22,7
 26027,IEEE Transactions on Circuits and Systems for Video Technology,0.977,22,7
 26051,IEEE Transactions on Electromagnetic Compatibility,0.703,22,7
+26052,IEEE Transactions on Electron Devices,0.839,22,7
 26372,Risk Analysis,1.01,22,7
+26444,Polymer Degradation and Stability,1.041,22,7
 26471,ASAIO Journal,0.771,22,7
 26480,Finite Fields and their Applications,0.894,22,7
+26547,Geological Society Special Publication,0.902,22,7
+26779,Artificial Organs,0.736,22,7
+26989,Microporous and Mesoporous Materials,1.08,22,7
 27019,"Journal of Energy Resources Technology, Transactions of the ASME",0.834,22,7
 27191,Semiconductor Science and Technology,0.757,22,7
+27237,IEEE/ACM Transactions on Networking,0.716,22,7
+27356,Metallurgical and Materials Transactions A: Physical Metallurgy and Materials Science,1.093,22,7
+27376,Metals and Materials International,0.724,22,7
 27474,Annals of Biomedical Engineering,1.042,22,7
+27639,Cartography and Geographic Information Science,0.837,22,7
 27784,Journal of Marine Science and Technology,0.784,22,7
 27804,Mineral Processing and Extractive Metallurgy Review,0.766,22,7
+27843,Annual Reviews in Control,0.824,22,7
 27946,Geophysical and Astrophysical Fluid Dynamics,0.744,22,7
+28027,IEEE Power and Energy Magazine,0.942,22,7
+28130,Journal of Adhesion,0.928,22,7
+28425,Fire Safety Journal,0.789,22,7
 28521,Journal of Hydrodynamics,0.768,22,7
+28593,Journal of Turbulence,0.863,22,7
 28697,Materials Letters,0.782,22,7
+28703,Mathematics and Mechanics of Solids,0.768,22,7
 28704,Modelling and Simulation in Materials Science and Engineering,0.821,22,7
 28875,ACM Transactions on Information and System Security,0.729,22,7
+28918,IEEE Transactions on Dependable and Secure Computing,0.802,22,7
 28960,Soil Dynamics and Earthquake Engineering,1.075,22,7
+28967,Discrete Event Dynamic Systems: Theory and Applications,0.944,22,7
 29222,Fatigue and Fracture of Engineering Materials and Structures,1.115,22,7
+29462,Ground Water Monitoring and Remediation,0.73,22,7
 29586,"Journal of Guidance, Control, and Dynamics",1.104,22,7
 29593,Applied Optics,0.715,22,7
+29651,Granular Matter,0.789,22,7
 29784,"Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences",0.907,22,7
+29805,ISA Transactions,1.115,22,7
 29964,AIAA Journal,0.763,22,7
 34774,Metallurgical Transactions B (Process Metallurgy),1.112,22,7
 36450,Design Studies,0.941,22,7
 50091,"Journal of Waterway, Port, Coastal and Ocean Engineering",0.913,22,7
+78854,International Journal of Space Structures,0.785,22,7
+98028,Journal of Biomedical Materials Research - Part A,0.933,22,7
 98456,International Journal of Structural Stability and Dynamics,1.005,22,7
 110040,Nanotechnology,1.079,22,7
+120005,"Journal of Vibration and Acoustics, Transactions of the ASME",0.91,22,7
 144604,"Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences",0.931,22,7
 200147101,Studies in Conflict and Terrorism,0.913,22,7
+3200147832,Journal of Building Physics,0.786,22,7
+3300147502,International Journal of Mechanics and Materials in Design,0.813,22,7
+4500151509,International Journal of Applied Mathematics and Computer Science,0.729,22,7
 4700151725,"IEEE Transactions on Audio, Speech and Language Processing",0.867,22,7
 4700152204,Structural Health Monitoring,0.849,22,7
+4700152290,Bioinspiration and Biomimetics,0.764,22,7
+4700152736,Journal of School Violence,0.947,22,7
 4900153217,Journal of Computational and Nonlinear Dynamics,0.791,22,7
 5200152631,IEEE Vehicular Technology Magazine,0.867,22,7
+5200152634,Journal of Women and Minorities in Science and Engineering,0.848,22,7
+5400152713,"IET Generation, Transmission and Distribution",0.907,22,7
 5700191219,IEEE Transactions on Biomedical Circuits and Systems,0.865,22,7
+6000195380,Regenerative Medicine,0.887,22,7
+8000153139,Journal of the Mechanical Behavior of Biomedical Materials,0.958,22,7
+9100153108,Physical Mesomechanics,0.834,22,7
+9500153930,IEEE Transactions on Circuits and Systems II: Express Briefs,0.758,22,7
 10600153366,Structure and Infrastructure Engineering,0.862,22,7
+10700153301,Journal of tissue engineering and regenerative medicine,0.88,22,7
 10900153323,Georisk,0.916,22,7
+11000153733,IEEE Transactions on Circuits and Systems I: Regular Papers,0.869,22,7
+11300153741,Journal of Hydro-Environment Research,0.906,22,7
+11400153310,International Journal of Logistics Research and Applications,0.771,22,7
+11400153317,Tissue Engineering - Part C: Methods,0.956,22,7
+11700154380,Biomedical Materials (Bristol),0.768,22,7
+11700154733,Journal of Biomedical Nanotechnology,0.828,22,7
+12600154783,Networks and Heterogeneous Media,0.783,22,7
 13300154702,Applied Physics Express,0.931,22,7
+14000156254,Archives of Civil and Mechanical Engineering,0.982,22,7
+16400154786,Journal of Biophotonics,1.028,22,7
+18300156719,Journal of Building Performance Simulation,0.957,22,7
+18300156720,IEEE Intelligent Transportation Systems Magazine,0.816,22,7
 18500162200,"Journal of Infrared, Millimeter, and Terahertz Waves",0.803,22,7
+18700156719,Journal of Flood Risk Management,0.754,22,7
+19400158456,International Journal of Sustainable Transportation,1.058,22,7
 19400158510,Logistics Research,0.702,22,7
+19400158591,Applied Geomatics,0.733,22,7
 19500157074,Building Simulation,0.839,22,7
 19600156901,Architectural Engineering and Design Management,0.727,22,7
+19700167026,IEEE Transactions on Learning Technologies,0.783,22,7
+19700174683,International Journal for Numerical Methods in Biomedical Engineering,1.021,22,7
 19700176215,IEEE Photonics Journal,0.893,22,7
 19700181322,International Journal of Architectural Heritage,0.744,22,7
+19700186816,Journal of Mechanisms and Robotics,0.868,22,7
+19700186818,Ships and Offshore Structures,0.79,22,7
+19700186866,IET Power Electronics,0.803,22,7
 19700188258,Earthquake and Structures,0.726,22,7
+19700194105,Sustainable Cities and Society,1.047,22,7
 19700201680,Remote Sensing Letters,0.752,22,7
+19800188022,IEEE Transactions on Terahertz Science and Technology,1.086,22,7
+19900191719,Construction Innovation,0.731,22,7
 19900192310,International Journal of Applied Mechanics,0.793,22,7
 21100197977,Cartilage,0.889,22,7
 21100201986,Interface Focus,0.983,22,7
@@ -241,249 +542,566 @@ Sourceid,Title,SJR,field,octile
 21100238624,Journal of Civil Structural Health Monitoring,0.727,22,7
 21100239264,IEEE Control Systems,0.983,22,7
 21100256982,IEEE Journal of Biomedical and Health Informatics,0.991,22,7
+21100262580,Case Studies in Thermal Engineering,0.991,22,7
 21100310028,Journal of Transport and Health,0.918,22,7
+21100338355,IEEE Journal of the Electron Devices Society,1.016,22,7
+21100377744,International Journal of Lean Six Sigma,0.802,22,7
+21100394266,International Journal of Agile Systems and Management,0.878,22,7
+21100456187,International Journal of Rail Transportation,0.974,22,7
+21100461936,Journal of Magnesium and Alloys,0.927,22,7
 21100788289,Mobile Media and Communication,1.089,22,7
+21100802703,Nanoscale and Microscale Thermophysical Engineering,1.091,22,7
+21100810712,Journal of Remanufacturing,0.92,22,7
+21100817528,Energy Science and Engineering,0.732,22,7
+12037,"Welding in the World, Le Soudage Dans Le Monde",0.533,22,6
+12040,Welding Journal,0.654,22,6
+12063,Acta Meteorologica Sinica,0.638,22,6
 12174,"Navigation, Journal of the Institute of Navigation",0.581,22,6
+12209,Laser and Particle Beams,0.497,22,6
+12221,Asian Journal of Control,0.642,22,6
 12317,Optical Fiber Technology,0.522,22,6
+12318,Optical Materials,0.592,22,6
 12329,Journal of Iron and Steel Research International,0.569,22,6
 12337,International Journal of Bifurcation and Chaos in Applied Sciences and Engineering,0.568,22,6
+12352,Optics Communications,0.614,22,6
+12375,Advances in Space Research,0.569,22,6
+12441,Open Systems and Information Dynamics,0.512,22,6
 12960,International Journal of Human Computer Studies,0.605,22,6
+13002,Heat Transfer Engineering,0.57,22,6
+13005,Journal of Low Frequency Noise Vibration and Active Control,0.506,22,6
+13106,Journal of the American Helicopter Society,0.637,22,6
+13511,Shock and Vibration,0.468,22,6
 13719,Experimental Heat Transfer,0.588,22,6
+13757,Process Safety Progress,0.623,22,6
+13803,Signal Processing: Image Communication,0.551,22,6
+13831,Chinese Journal of Aeronautics,0.632,22,6
 13835,Acta Mechanica Sinica/Lixue Xuebao,0.607,22,6
 13836,Acta Mechanica Solida Sinica,0.542,22,6
 13859,Research in Nondestructive Evaluation,0.519,22,6
+13907,AEJ - Alexandria Engineering Journal,0.604,22,6
 13954,"Journal of the Urban Planning and Development Division, ASCE",0.596,22,6
 14393,International Journal of Computational Fluid Dynamics,0.578,22,6
+14469,Advances in Structural Engineering,0.599,22,6
 14498,Mechanics of Time-Dependent Materials,0.497,22,6
 14592,Theoretical and Computational Fluid Dynamics,0.47,22,6
 15026,Flow Measurement and Instrumentation,0.489,22,6
+15047,IEEE Sensors Journal,0.619,22,6
 15072,Electronic Journal of Information Technology in Construction,0.589,22,6
+15249,"Engineering, Construction and Architectural Management",0.653,22,6
 15443,Metrologia,0.614,22,6
+15464,IEEE Transactions on Nanotechnology,0.572,22,6
 15504,Diangong Jishu Xuebao/Transactions of China Electrotechnical Society,0.673,22,6
+15526,Measurement Science and Technology,0.53,22,6
+16070,"Journal of Biomaterials Science, Polymer Edition",0.537,22,6
 16255,Journal of Civil Engineering and Management,0.572,22,6
+16278,Journal of Energy Engineering - ASCE,0.481,22,6
+16297,Journal of Infrastructure Systems,0.603,22,6
+16298,Journal of Irrigation and Drainage Engineering - ASCE,0.521,22,6
+16300,Journal of Performance of Constructed Facilities,0.688,22,6
 16307,"Journal of Surveying Engineering, - ASCE",0.461,22,6
 16319,IEEE Transactions on Nanobioscience,0.566,22,6
+16325,Advanced Powder Technology,0.694,22,6
 16396,Chemical Engineering and Technology,0.493,22,6
+16502,Jianzhu Jiegou Xuebao/Journal of Building Structures,0.518,22,6
+17141,Journal of the Textile Institute,0.481,22,6
+17248,IEEE Antennas and Propagation Magazine,0.491,22,6
+17296,IEEE Microwave Magazine,0.485,22,6
+17336,IEEE Transactions on Aerospace and Electronic Systems,0.611,22,6
+17343,IEEE Transactions on Dielectrics and Electrical Insulation,0.468,22,6
+17344,IEEE Transactions on Education,0.486,22,6
+17364,IEEE Transactions on Magnetics,0.488,22,6
+17368,IEEE Transactions on Nuclear Science,0.565,22,6
 17558,Tumu Gongcheng Xuebao/China Civil Engineering Journal,0.468,22,6
 17798,Materials at High Temperatures,0.669,22,6
+17817,Medical Engineering and Physics,0.66,22,6
 17870,Nondestructive Testing and Evaluation,0.684,22,6
 17954,Computer Methods in Biomechanics and Biomedical Engineering,0.579,22,6
+17979,Medical and Biological Engineering and Computing,0.661,22,6
+18031,"Wind and Structures, An International Journal",0.537,22,6
+18041,Journal of Electrostatics,0.478,22,6
 18186,Engineering with Computers,0.485,22,6
+18264,Zhongguo Kuangye Daxue Xuebao/Journal of China University of Mining & Technology,0.678,22,6
+18375,Synthetic Metals,0.672,22,6
+18439,Cell and Tissue Banking,0.527,22,6
+18465,Fluid Dynamics Research,0.476,22,6
+18523,Cytotechnology,0.519,22,6
+18610,Molecular Imaging,0.597,22,6
 18895,Journal of Advanced Transportation,0.581,22,6
+18896,IEEE Communications Letters,0.589,22,6
+18898,Journal of Terramechanics,0.545,22,6
 18908,Journal of Transportation Engineering,0.592,22,6
+19171,Journal of Quality in Maintenance Engineering,0.481,22,6
+19511,International Journal of Mobile Communications,0.665,22,6
+19690,Geotechnical and Geological Engineering,0.611,22,6
+19731,Comptes Rendus - Mecanique,0.481,22,6
+19880,Advanced Composite Materials,0.498,22,6
 20344,Fusion Engineering and Design,0.61,22,6
+20405,"Proceedings of the Institution of Mechanical Engineers, Part A: Journal of Power and Energy",0.523,22,6
 20406,"Proceedings of the Institution of Mechanical Engineers, Part B: Journal of Engineering Manufacture",0.621,22,6
+20786,Bell Labs Technical Journal,0.657,22,6
 20948,Jixie Gongcheng Xuebao/Chinese Journal of Mechanical Engineering,0.487,22,6
+20952,Journal of Computing and Information Science in Engineering,0.627,22,6
+20962,Journal of Engineering for Gas Turbines and Power,0.686,22,6
 20983,Journal of Micromechanics and Microengineering,0.554,22,6
+20986,"Journal of Pressure Vessel Technology, Transactions of the ASME",0.595,22,6
+21047,Gong Cheng Li Xue/Engineering Mechanics,0.483,22,6
+21122,Ironmaking and Steelmaking,0.647,22,6
 21140,Journal of Composite Materials,0.555,22,6
 21141,"Journal of Dynamic Systems, Measurement and Control, Transactions of the ASME",0.618,22,6
 21160,Journal of Materials Engineering and Performance,0.611,22,6
 21161,Journal of Materials Research,0.61,22,6
+21177,Journal of Materials Science: Materials in Electronics,0.503,22,6
 21178,Journal of Materials Science: Materials in Medicine,0.647,22,6
 21182,Journal of Porous Materials,0.5,22,6
+21183,Journal of Porous Media,0.504,22,6
 21185,Journal of Reinforced Plastics and Composites,0.543,22,6
 21189,Journal of Strain Analysis for Engineering Design,0.615,22,6
 21223,Machining Science and Technology,0.556,22,6
 21655,Journal of Biomaterials Applications,0.621,22,6
+21959,Superlattices and Microstructures,0.574,22,6
+22060,Strojniski Vestnik/Journal of Mechanical Engineering,0.47,22,6
 22062,Structural Engineering and Mechanics,0.603,22,6
+22202,Operations Research Letters,0.669,22,6
+22545,Diqiu Kexue - Zhongguo Dizhi Daxue Xuebao/Earth Science - Journal of China University of Geosciences,0.599,22,6
 23150,IMA Journal of Mathematical Control and Information,0.496,22,6
 23189,Food Science and Technology International,0.509,22,6
 23300,Japan Journal of Industrial and Applied Mathematics,0.472,22,6
 23917,Journal of Intelligent and Fuzzy Systems,0.459,22,6
+24306,Digital Signal Processing: A Review Journal,0.55,22,6
+24326,"International Journal of Uncertainty, Fuzziness and Knowlege-Based Systems",0.508,22,6
 24360,Journal of Intelligent and Robotic Systems: Theory and Applications,0.537,22,6
 24594,Mathematical Methods in the Applied Sciences,0.666,22,6
 24680,Diamond and Related Materials,0.686,22,6
+24998,Computer Aided Geometric Design,0.683,22,6
 25070,"Proceedings of the Institution of Mechanical Engineers, Part F: Journal of Rail and Rapid Transit",0.494,22,6
 25178,Applied Mathematics and Mechanics (English Edition),0.461,22,6
+25199,Journal of Solid State Electrochemistry,0.661,22,6
 25479,"International Journal of Control, Automation and Systems",0.618,22,6
+25549,Image and Vision Computing,0.612,22,6
 25592,Journal of Visual Communication and Image Representation,0.503,22,6
+25596,Proceedings of the Institution of Mechanical Engineers Part M: Journal of Engineering for the Maritime Environment,0.618,22,6
+25630,International Shipbuilding Progress,0.631,22,6
 25659,Journal of Navigation,0.493,22,6
 26004,IEEE Circuits and Systems Magazine,0.545,22,6
 26022,IEEE Journal of Quantum Electronics,0.65,22,6
+26048,IEEE Transactions on Consumer Electronics,0.53,22,6
 26091,Wood Science and Technology,0.659,22,6
+26309,Quarterly Journal of Mechanics and Applied Mathematics,0.499,22,6
 26435,Beton- und Stahlbetonbau,0.545,22,6
+26620,Journal of Electronic Materials,0.474,22,6
 26621,"Journal of Electronic Packaging, Transactions of the ASME",0.569,22,6
 26644,Concurrent Engineering Research and Applications,0.642,22,6
 26675,Materials Science in Semiconductor Processing,0.634,22,6
+26696,Microelectronic Engineering,0.604,22,6
 26956,Building Services Engineering Research and Technology,0.583,22,6
+26980,Buildings,0.484,22,6
+27206,Solid-State Electronics,0.492,22,6
 27317,Ship Technology Research,0.555,22,6
 27724,IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems,0.485,22,6
 27850,Marine Georesources and Geotechnology,0.471,22,6
 27879,Earthquake Engineering and Engineering Vibration,0.479,22,6
+27970,ZAMM Zeitschrift für Angewandte Mathematik und Mechanik,0.604,22,6
+28374,Oceanologia,0.638,22,6
+28427,Fire Technology,0.658,22,6
+28580,Radio Science,0.546,22,6
+28585,Acta Metallurgica Sinica (English Letters),0.576,22,6
+28586,BioMedical Engineering Online,0.542,22,6
 28588,China Ocean Engineering,0.541,22,6
 28590,Biomedical Microdevices,0.538,22,6
+28598,Journal of X-Ray Science and Technology,0.495,22,6
+29114,Engineering Optimization,0.576,22,6
 29119,Physica C: Superconductivity and its Applications,0.492,22,6
+29585,Journal of the Astronautical Sciences,0.461,22,6
 29587,Journal of Propulsion and Power,0.665,22,6
+29589,Journal of Spacecraft and Rockets,0.577,22,6
+29653,Quantum Electronics,0.501,22,6
+29721,Vodohospodarsky Casopis/Journal of Hydrology & Hydromechanics,0.599,22,6
 30286,"Journal of King Saud University, Engineering Sciences",0.682,22,6
 33015,Journal of the Society for Information Display,0.477,22,6
+34667,Microgravity Science and Technology,0.514,22,6
 35688,Materials and Corrosion - Werkstoffe und Korrosion,0.47,22,6
 52416,Bulletin of the New Zealand Society for Earthquake Engineering,0.465,22,6
 52949,Lighting Research and Technology,0.66,22,6
+61490,Biosystems Engineering,0.676,22,6
 62932,Energies,0.67,22,6
+71092,Architectural Science Review,0.617,22,6
+79319,Expert Review of Medical Devices,0.488,22,6
 83986,Gaodianya Jishu/High Voltage Engineering,0.528,22,6
+87828,International Journal of Heat and Technology,0.525,22,6
+92266,Scientific Drilling,0.561,22,6
+130124,Sensors,0.584,22,6
 130262,"Japanese Journal of Applied Physics, Part 1: Regular Papers & Short Notes",0.497,22,6
+144699,Journal of Mechanical Science and Technology,0.553,22,6
 144739,Facilities,0.503,22,6
 144950,Journal of Geophysics and Engineering,0.524,22,6
+145326,International Journal of Information Security,0.555,22,6
+145397,Journal of Material Cycles and Waste Management,0.491,22,6
 145625,Ionics,0.557,22,6
 4000148802,Computers and Concrete,0.492,22,6
+4400151708,Zhongguo Shiyou Daxue Xuebao (Ziran Kexue Ban)/Journal of China University of Petroleum (Edition of Natural Science),0.513,22,6
 4700152208,International Journal of Humanoid Robotics,0.495,22,6
 4700152264,International Journal of Automotive Technology,0.676,22,6
 4700152490,International Journal of Computer Assisted Radiology and Surgery,0.614,22,6
+4700152859,Maderas: Ciencia y Tecnologia,0.546,22,6
+4800153205,ACM Transactions on Autonomous and Adaptive Systems,0.487,22,6
 5100155084,IET Electric Power Applications,0.548,22,6
 5300152513,Progress in Electromagnetics Research,0.682,22,6
 5300152722,Smart Structures and Systems,0.591,22,6
 5700165202,"IET Radar, Sonar and Navigation",0.548,22,6
+5800179580,Physica Status Solidi (A) Applications and Materials,0.648,22,6
 6100153023,"IET Microwaves, Antennas and Propagation",0.565,22,6
+6200180165,"Signal, Image and Video Processing",0.485,22,6
+7200153156,IEEE Transactions on Network and Service Management,0.63,22,6
 7600153123,Journal of Mechanics of Materials and Structures,0.49,22,6
 9500153947,Coastal Engineering Journal,0.471,22,6
+9500154018,Journal of Zhejiang University: Science A,0.599,22,6
 10600153345,International Journal of Precision Engineering and Manufacturing,0.663,22,6
 11200153401,European Journal of Industrial Engineering,0.595,22,6
 11300153314,European Journal of Engineering Education,0.581,22,6
+11300153734,IEEE Systems Journal,0.595,22,6
+11600153414,Proceedings of the Institution of Civil Engineers: Ground Improvement,0.559,22,6
+11700154372,Disability and rehabilitation. Assistive technology,0.465,22,6
 12400154727,International Journal of Coal Preparation and Utilization,0.623,22,6
 13900154710,Latin American Journal of Solids and Structures,0.522,22,6
 14500154701,Food Analytical Methods,0.662,22,6
 15300154820,Production Engineering,0.602,22,6
+15500154701,Journal of Applied Fluid Mechanics,0.495,22,6
+17300154971,International Journal of Critical Infrastructure Protection,0.648,22,6
+17400154821,Sports Engineering,0.493,22,6
+17600154907,Advances in Engineering Education,0.553,22,6
+17700154922,International Review of Electrical Engineering,0.594,22,6
+17700156412,Caikuang yu Anquan Gongcheng Xuebao/Journal of Mining and Safety Engineering,0.652,22,6
+17700156413,Dianli Xitong Baohu yu Kongzhi/Power System Protection and Control,0.536,22,6
+17700156449,"International Journal of Minerals, Metallurgy and Materials",0.559,22,6
+18800156713,International Journal of Construction Management,0.649,22,6
+19300157022,"Proceedings of the Institution of Mechanical Engineers, Part O: Journal of Risk and Reliability",0.588,22,6
 19400158557,European Transport Research Review,0.51,22,6
+19600161828,Public Transport,0.529,22,6
+19700167024,Science China Technological Sciences,0.537,22,6
 19700174655,Advanced Steel Construction,0.595,22,6
+19700175126,Medical Devices: Evidence and Research,0.586,22,6
+19700175229,Analytical Methods,0.619,22,6
+19700177025,IEEE Transactions on Computational Intelligence and AI in Games,0.493,22,6
 19700181203,KONA Powder and Particle Journal,0.494,22,6
+19700182335,Advances in Bioinformatics,0.565,22,6
 19700182638,Eksploatacja i Niezawodnosc,0.486,22,6
+19700186900,Water Science and Engineering,0.48,22,6
+19700186912,Geomechanics and Engineering,0.48,22,6
+19700200705,Ain Shams Engineering Journal,0.589,22,6
 19700200707,Journal of Nanomechanics and Micromechanics,0.533,22,6
+19700200832,"Technology, Knowledge and Learning",0.614,22,6
+19700201037,CoDesign,0.626,22,6
+19700201670,CYTA - Journal of Food,0.507,22,6
+19700201678,IEEE Journal on Emerging and Selected Topics in Circuits and Systems,0.619,22,6
 19800188068,International Journal of Spray and Combustion Dynamics,0.481,22,6
+19900191852,Advances in Civil Engineering,0.539,22,6
+19900192031,International Journal of Biomaterials,0.511,22,6
 19900192460,Ingegneria Sismica,0.491,22,6
+19900195021,International Journal of Steel Structures,0.59,22,6
+20500195063,Quantitative InfraRed Thermography,0.524,22,6
+20500195101,European Journal of Environmental and Civil Engineering,0.484,22,6
+21100197706,International Journal of Naval Architecture and Ocean Engineering,0.571,22,6
+21100199777,"IEEE Transactions on Components, Packaging and Manufacturing Technology",0.482,22,6
 21100201094,Frontiers of Structural and Civil Engineering,0.616,22,6
+21100201997,Journal of Information Display,0.525,22,6
+21100203111,IEEE Wireless Communications Letters,0.678,22,6
+21100215904,Journal of Geometric Mechanics,0.529,22,6
 21100223326,International Journal of Industrial Engineering Computations,0.537,22,6
 21100228305,International Review of Automatic Control,0.493,22,6
+21100229176,Micromachines,0.493,22,6
 21100230300,Transactions of the ASABE,0.481,22,6
+21100235622,International Journal of Automotive and Mechanical Engineering,0.576,22,6
 21100241791,Journal of Industrial and Production Engineering,0.465,22,6
 21100241807,"Artificial Cells, Nanomedicine and Biotechnology",0.495,22,6
+21100242231,Built Environment Project and Asset Management,0.46,22,6
 21100242232,Healthcare Informatics Research,0.576,22,6
+21100242826,Safety and Health at Work,0.461,22,6
 21100244831,SAE International Journal of Alternative Powertrains,0.496,22,6
+21100285028,IEEE Transactions on Human-Machine Systems,0.603,22,6
 21100297834,Biomatter,0.634,22,6
+21100310027,Advances in Manufacturing,0.475,22,6
 21100329308,Journal of Vacuum Science and Technology B: Nanotechnology and Microelectronics,0.467,22,6
+21100338307,IEEE Journal of Translational Engineering in Health and Medicine,0.479,22,6
 21100374601,IEEE Access,0.548,22,6
+21100456196,Production and Manufacturing Research,0.558,22,6
 21100456856,Mathematics and Mechanics of Complex Systems,0.51,22,6
 21100466461,Friction,0.684,22,6
+21100790518,International Journal of Management Science and Engineering Management,0.464,22,6
 21100803572,Systems Science and Control Engineering,0.517,22,6
 21100823385,Defence Technology,0.633,22,6
+21100829272,Electronics (Switzerland),0.548,22,6
+12049,Yosetsu Gakkai Ronbunshu/Quarterly Journal of the Japan Welding Society,0.369,22,5
+12204,International Journal of Cast Metals Research,0.387,22,5
 12225,Laser Physics,0.345,22,5
 12300,IEEE Transactions on Very Large Scale Integration (VLSI) Systems,0.447,22,5
 12307,Jinshu Xuebao/Acta Metallurgica Sinica,0.413,22,5
+12313,Optical and Quantum Electronics,0.353,22,5
+12316,Optical Engineering,0.424,22,5
 12345,International Journal of Engineering Education,0.433,22,5
 12424,Inverse Problems in Science and Engineering,0.406,22,5
+12485,Journal of Engineering Mathematics,0.418,22,5
 12633,Aircraft Engineering and Aerospace Technology,0.354,22,5
 12763,International Journal of Technology Management,0.411,22,5
 12918,Zhongguo Jiguang/Chinese Journal of Lasers,0.328,22,5
+13027,Tuijin Jishu/Journal of Propulsion Technology,0.358,22,5
+13628,Yuhang Xuebao/Journal of Astronautics,0.349,22,5
 13629,Zhendong Gongcheng Xuebao/Journal of Vibration Engineering,0.325,22,5
+13664,Journal of Adhesion Science and Technology,0.333,22,5
 13751,High Temperature,0.455,22,5
 14217,Mater Plast Elastomeri Fibre Sint,0.336,22,5
 14371,Fluid Dynamics,0.345,22,5
 14502,Archives of Civil Engineering,0.437,22,5
 14618,Zhendong yu Chongji/Journal of Vibration and Shock,0.354,22,5
+14737,International Journal of Artificial Organs,0.431,22,5
+14976,Canadian Journal of Civil Engineering,0.341,22,5
+15360,IEEE Instrumentation and Measurement Magazine,0.333,22,5
+15445,ASHRAE Journal,0.333,22,5
+15462,Biotechnology and Applied Biochemistry,0.431,22,5
+15463,IEEE Micro,0.413,22,5
+15632,Food Technology and Biotechnology,0.365,22,5
 15751,Heron,0.365,22,5
 15810,Probability in the Engineering and Informational Sciences,0.406,22,5
 15924,Journal of Research of the National Institute of Standards and Technology,0.42,22,5
 15949,Journal of Medical and Biological Engineering,0.356,22,5
+15952,Journal of Medical Engineering and Technology,0.389,22,5
 16015,Journal of Industrial Textiles,0.377,22,5
+16031,Electric Power Components and Systems,0.373,22,5
 16065,Electrical Engineering,0.323,22,5
+16163,Proceedings of the Institution of Civil Engineers: Structures and Buildings,0.41,22,5
+16252,Journal of Aerospace Engineering,0.366,22,5
+16258,Journal of Cold Regions Engineering - ASCE,0.424,22,5
+16301,Journal of Professional Issues in Engineering Education and Practice,0.456,22,5
 16334,"Proceedings of the Institution of Mechanical Engineers, Part H: Journal of Engineering in Medicine",0.44,22,5
 17064,Laser Therapy,0.385,22,5
+17258,IEEE Electrical Insulation Magazine,0.392,22,5
+17260,IEEE Industry Applications Magazine,0.331,22,5
+17329,Photomedicine and Laser Surgery,0.443,22,5
+17388,IEEE Transactions on Semiconductor Manufacturing,0.359,22,5
 17473,Survey Review,0.417,22,5
 17569,Wireless Networks,0.336,22,5
+17683,AEU - International Journal of Electronics and Communications,0.42,22,5
+17963,International Journal of Circuit Theory and Applications,0.366,22,5
+17964,International Journal of Communication Systems,0.326,22,5
 18003,Advanced Robotics,0.359,22,5
+18078,Robotica,0.375,22,5
+18156,Computer Applications in Engineering Education,0.367,22,5
+18159,Computers and Electrical Engineering,0.401,22,5
+18184,Engineering Computations,0.444,22,5
 18535,International Journal of Fluid Power,0.347,22,5
 18817,European Transactions on Telecommunications,0.347,22,5
+18869,International Journal of Vehicle Design,0.363,22,5
 18899,SPE Drilling and Completion,0.452,22,5
+19111,Human Factors and Ergonomics In Manufacturing,0.417,22,5
 20389,Industrial Lubrication and Tribology,0.334,22,5
+20407,"Proceedings of the Institution of Mechanical Engineers, Part C: Journal of Mechanical Engineering Science",0.436,22,5
+20409,Proceedings of the Institution of Mechanical Engineers. Part I: Journal of Systems and Control Engineering,0.394,22,5
+20432,Software Testing Verification and Reliability,0.335,22,5
+20611,Journal of Food Quality,0.447,22,5
+20799,Transport,0.402,22,5
+20965,Journal of Friction and Wear,0.432,22,5
+21092,Mechanics Based Design of Structures and Machines,0.438,22,5
 21154,Journal of Electroceramics,0.427,22,5
+21156,Journal of Fire Sciences,0.393,22,5
+21205,Journal of Testing and Evaluation,0.339,22,5
+21702,Journal of Long-Term Effects of Medical Implants,0.332,22,5
+22178,"Zhendong Ceshi Yu Zhenduan/Journal of Vibration, Measurement and Diagnosis",0.329,22,5
+23247,International Journal of Nonlinear Sciences and Numerical Simulation,0.382,22,5
 23355,"Journal of Environmental Engineering, ASCE",0.445,22,5
 23434,Journal of Risk Research,0.361,22,5
+23678,"Artificial Intelligence for Engineering Design, Analysis and Manufacturing: AIEDAM",0.375,22,5
 23977,International Journal of Automotive Technology and Management,0.374,22,5
+24017,ZWF Zeitschrift fuer Wirtschaftlichen Fabrikbetrieb,0.365,22,5
 24103,Nase More,0.341,22,5
 24129,Natural Hazards Review,0.426,22,5
+24185,Expert Systems,0.429,22,5
+24918,Electronics Letters,0.407,22,5
 24950,Automation and Remote Control,0.328,22,5
+25028,Computers and Graphics,0.355,22,5
 25482,International Journal of Robotics and Automation,0.367,22,5
 25531,IEEE Multimedia,0.417,22,5
+25566,Zidonghua Xuebao/Acta Automatica Sinica,0.355,22,5
 25587,Pacific Economic Review,0.404,22,5
 25993,IEEE Aerospace and Electronic Systems Magazine,0.335,22,5
+26026,IEEE Transactions on Applied Superconductivity,0.408,22,5
+26049,IEEE Transactions on Device and Materials Reliability,0.44,22,5
+26290,Tiedao Xuebao/Journal of the China Railway Society,0.384,22,5
 26427,Zhongguo Tiedao Kexue/China Railway Science,0.405,22,5
+26672,International Journal of Ambient Energy,0.355,22,5
+26717,Microelectronics Reliability,0.388,22,5
+26738,Microsystem Technologies,0.346,22,5
+27160,"Radiophysics and Quantum Electronics (English Translation of Izvestiya Vysshikh Uchebnykh Zavedenii, Radiofizika)",0.362,22,5
 27215,Journal of Artificial Organs,0.387,22,5
 27301,Materials Technology,0.352,22,5
+27302,Materials Transactions,0.449,22,5
 27496,Zhongguo Gonglu Xuebao/China Journal of Highway and Transport,0.399,22,5
 27502,Doklady Physics,0.333,22,5
+27790,Metalurgija,0.39,22,5
+27885,Powder Metallurgy,0.406,22,5
+28047,Australasian Physical and Engineering Sciences in Medicine,0.336,22,5
 28117,Japanese Journal of Applied Physics,0.371,22,5
+28513,"Modelling, Measurement and Control A",0.33,22,5
 28515,"Modelling, Measurement and Control B",0.397,22,5
+28546,Journal of Nanoscience and Nanotechnology,0.326,22,5
 28916,IEEE Security and Privacy,0.36,22,5
 29006,Hangkong Xuebao/Acta Aeronautica et Astronautica Sinica,0.445,22,5
 29044,Canadian Metallurgical Quarterly,0.357,22,5
 29080,"Proceedings of the Institution of Mechanical Engineers, Part G: Journal of Aerospace Engineering",0.422,22,5
 29112,Photonics and Nanostructures - Fundamentals and Applications,0.433,22,5
+29118,Physica B: Condensed Matter,0.417,22,5
+29560,Soldering and Surface Mount Technology,0.399,22,5
+29583,Journal of Aircraft,0.388,22,5
+29695,Kang T'ieh/Iron and Steel (Peking),0.325,22,5
+29698,Journal of Iron and Steel Research,0.324,22,5
+29995,Fusion Science and Technology,0.383,22,5
 32694,Tappi Journal,0.328,22,5
 35932,International Journal of Imaging Systems and Technology,0.38,22,5
 37960,Magnetohydrodynamics,0.326,22,5
 40853,Journal of the International Association for Shell and Spatial Structures,0.423,22,5
+51150,Opto-electronics Review,0.358,22,5
 55762,International Journal of Crashworthiness,0.346,22,5
+59863,Nongye Jixie Xuebao/Transactions of the Chinese Society of Agricultural Machinery,0.437,22,5
 62499,Nongye Gongcheng Xuebao/Transactions of the Chinese Society of Agricultural Engineering,0.386,22,5
+66344,Chinese Optics Letters,0.393,22,5
 67736,Tribology in Industry,0.429,22,5
 70859,Tribologia: Finnish Journal of Tribology,0.367,22,5
+71359,Journal of the Brazilian Society of Mechanical Sciences and Engineering,0.362,22,5
+74390,Palpu Chongi Gisul/Journal of Korea Technical Association of the Pulp and Paper Industry,0.323,22,5
+110152,Optik,0.346,22,5
+130021,Biotechnology and Bioprocess Engineering,0.399,22,5
 130117,Optimization and Engineering,0.446,22,5
+144789,Infrared and Laser Engineering,0.379,22,5
 144811,International Journal of Construction Education and Research,0.407,22,5
+144831,Advances in Applied Ceramics,0.371,22,5
+145257,Journal of Technology Education,0.383,22,5
 145515,Waves in Random and Complex Media,0.453,22,5
+145641,Journal of Huazhong University of Science and Technology - Medical Science,0.406,22,5
 147218,Journal of Conflict and Security Law,0.402,22,5
 100147032,IEEE/OSA Journal of Display Technology,0.442,22,5
 100147322,Materials Research,0.398,22,5
 3500148027,Science as Culture,0.449,22,5
+4000149403,International Journal of Ventilation,0.366,22,5
+4000149405,International Journal of Computational Methods in Engineering Science and Mechanics,0.359,22,5
 4000149501,International Journal of Product Lifecycle Management,0.328,22,5
 4000149602,Acta of Bioengineering and Biomechanics,0.39,22,5
+4000152112,International Journal of Food Engineering,0.323,22,5
 4500151507,Lixue Xuebao/Chinese Journal of Theoretical and Applied Mechanics,0.409,22,5
+4700151736,International Journal for Multiscale Computational Engineering,0.452,22,5
+4700152484,Journal of Systems Science and Systems Engineering,0.435,22,5
+4800152404,Dianli Zidonghua Shebei / Electric Power Automation Equipment,0.431,22,5
 5000154003,Transactions of the Royal Institution of Naval Architects Part A: InternationalJournal of Maritime Engineering,0.36,22,5
 5100155036,"Eurasip Journal on Audio, Speech, and Music Processing",0.337,22,5
 5200152703,International Journal of Automation and Computing,0.455,22,5
+5200152707,Eurasip Journal on Image and Video Processing,0.409,22,5
 5300152720,"IET Science, Measurement and Technology",0.352,22,5
 5400152639,IET Intelligent Transport Systems,0.436,22,5
 5400152646,IET Image Processing,0.34,22,5
 5400152656,IET Nanobiotechnology,0.424,22,5
+5800179616,International Journal of Industrial and Systems Engineering,0.34,22,5
+5800207372,Journal of Experimental Nanoscience,0.343,22,5
 5900152897,Journal of Design Research,0.346,22,5
 6100153106,IET Signal Processing,0.38,22,5
 7000153211,"Journal of Micro/ Nanolithography, MEMS, and MOEMS",0.379,22,5
+7300153102,International Journal of Low Carbon Technologies,0.403,22,5
+7600153104,IET Optoelectronics,0.335,22,5
+8000153127,"Journal of Mining and Metallurgy, Section B: Metallurgy",0.451,22,5
+9500154152,Intelligent Service Robotics,0.431,22,5
+10900153301,International Journal of Mechanical and Materials Engineering,0.348,22,5
+11200153523,International Journal of Manufacturing Research,0.411,22,5
+11300153720,Physical Communication,0.341,22,5
+11500153306,Recent Patents on Drug Delivery and Formulation,0.373,22,5
 11700154398,IEEE Nanotechnology Magazine,0.419,22,5
+11800154585,International Journal of Optomechatronics,0.338,22,5
 11800154590,IATSS Research,0.37,22,5
+11900154333,Expert Review of Ophthalmology,0.336,22,5
+12000154536,International Journal on Interactive Design and Manufacturing,0.426,22,5
+12100155655,Journal of Location Based Services,0.439,22,5
+12400154711,International Journal of Machining and Machinability of Materials,0.408,22,5
+12400154712,International Journal of Surface Science and Engineering,0.412,22,5
+15700154705,Operations Management Research,0.35,22,5
 17600155006,KSCE Journal of Civil Engineering,0.329,22,5
+17600155397,International Journal of Design,0.383,22,5
 17700156214,Geomechanik und Tunnelbau,0.355,22,5
+17700156604,International Journal of Civil Engineering,0.438,22,5
 17700156763,Measurement Science Review,0.441,22,5
+19200156954,Metrology and Measuring Systems,0.406,22,5
+19200157025,Engineering Economics,0.341,22,5
+19400156823,Issues in Science and Technology Librarianship,0.33,22,5
+19400157210,Biochip Journal,0.412,22,5
 19400157273,European Journal of Science and Theology,0.336,22,5
 19400158302,Advances in Building Energy Research,0.444,22,5
+19400158663,Biocybernetics and Biomedical Engineering,0.384,22,5
 19500157814,"Cement, Wapno, Beton",0.364,22,5
 19600166325,Cardiovascular Engineering and Technology,0.448,22,5
+19700173133,Drewno,0.328,22,5
+19700174659,Ontario Health Technology Assessment Series,0.375,22,5
+19700174664,SAE International Journal of Commercial Vehicles,0.325,22,5
 19700174666,SAE International Journal of Materials and Manufacturing,0.413,22,5
+19700174667,SAE International Journal of Passenger Cars - Mechanical Systems,0.449,22,5
+19700174698,Avicenna Journal of Medical Biotechnology,0.441,22,5
 19700175286,Evolving Systems,0.421,22,5
 19700175585,Desalination and Water Treatment,0.398,22,5
 19700177026,IEEE Embedded Systems Letters,0.347,22,5
 19700181207,International Journal of Sustainable Engineering,0.357,22,5
+19700182315,WMU Journal of Maritime Affairs,0.422,22,5
 19700182729,Journal of Thermal Science and Engineering Applications,0.39,22,5
+19700183006,International Journal of Agricultural and Biological Engineering,0.408,22,5
 19700186856,International Journal of Materials and Structural Integrity,0.369,22,5
 19700186882,Advances in Transportation Studies,0.36,22,5
+19700188148,Footwear Science,0.361,22,5
+19700200870,Intelligent Buildings International,0.366,22,5
+19700201405,International Journal of Micro Air Vehicles,0.368,22,5
+19700201518,"Engineering in Agriculture, Environment and Food",0.326,22,5
 19700201523,European Journal of Nanomedicine,0.384,22,5
 19700201653,Frontiers of Mechanical Engineering,0.415,22,5
+19700202601,International Review on Modelling and Simulations,0.428,22,5
+19800188013,Special Topics and Reviews in Porous Media,0.376,22,5
+19800188069,Journal of Laser Micro Nanoengineering,0.344,22,5
+19900192119,IET Wireless Sensor Systems,0.417,22,5
+19900192592,Journal of Innovative Optical Health Sciences,0.343,22,5
 19900193948,International Journal of Vehicular Technology,0.4,22,5
+19900194817,IET Electrical Systems in Transportation,0.406,22,5
 20500195209,International Journal of Structural Engineering,0.326,22,5
 20500195422,Journal of Pipeline Systems Engineering and Practice,0.421,22,5
+21100197318,International Journal of Automation Technology,0.435,22,5
 21100198500,International Journal of Disaster Resilience in the Built Environment,0.387,22,5
 21100198509,International Journal of Metalcasting,0.329,22,5
 21100199736,Technische Mechanik,0.341,22,5
 21100199837,Frontiers in Neurorobotics,0.455,22,5
+21100201017,Advances in Applied Mathematics and Mechanics,0.441,22,5
 21100201938,Manufacturing Technology,0.369,22,5
+21100203110,Computer Optics,0.457,22,5
+21100204919,Biomedical Engineering Letters,0.332,22,5
 21100205758,International Journal of Fluid Machinery and Systems,0.331,22,5
+21100209322,Frattura ed Integrita Strutturale,0.363,22,5
+21100216324,International Journal of Engineering Research in Africa,0.435,22,5
 21100217632,Iranian Journal of Science and Technology - Transactions of Mechanical Engineering,0.374,22,5
+21100222913,Journal of Modern Transportation,0.354,22,5
 21100223312,Journal of Applied Biomaterials and Functional Materials,0.372,22,5
 21100224010,Journal of Food Measurement and Characterization,0.369,22,5
+21100228564,Frontiers of Optoelectronics,0.365,22,5
+21100229411,Journal of Structural Fire Engineering,0.446,22,5
+21100239230,Diagnostyka,0.356,22,5
+21100239249,Bridge Construction,0.34,22,5
+21100239259,SAE Technical Papers,0.36,22,5
+21100239402,Journal of Central South University,0.336,22,5
 21100239852,Journal of Chemical Technology and Metallurgy,0.331,22,5
+21100241220,International Transactions on Electrical Energy Systems,0.453,22,5
 21100244634,Journal of Manufacturing Technology Research,0.356,22,5
+21100244649,Journal of Naval Architecture and Marine Engineering,0.323,22,5
 21100248865,Tissue Engineering and Regenerative Medicine,0.327,22,5
 21100274252,Journal of Applied Geodesy,0.445,22,5
+21100283367,International Journal of Prognostics and Health Management,0.329,22,5
+21100284945,Nanomaterials and Nanotechnology,0.366,22,5
+21100286862,Advances in Natural Sciences: Nanoscience and Nanotechnology,0.442,22,5
 21100286906,Eurasian Mining,0.443,22,5
 21100320405,Journal of Agricultural Engineering,0.449,22,5
+21100329537,International Journal of Sustainable Building Technology and Urban Development,0.329,22,5
 21100331506,International Journal on Communications Antenna and Propagation,0.38,22,5
+21100332403,Journal of Information Security and Applications,0.346,22,5
+21100385605,Smart and Sustainable Built Environment,0.373,22,5
 21100390176,Theoretical and Applied Mechanics Letters,0.399,22,5
+21100413834,Frontiers of Architectural Research,0.404,22,5
 21100463102,International Journal of Dynamics and Control,0.327,22,5
 21100466223,International Journal of Advanced Structural Engineering,0.399,22,5
+21100469602,Journal of Industrial Engineering International,0.457,22,5
 21100811143,Propulsion and Power Research,0.374,22,5

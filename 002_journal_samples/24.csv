@@ -1,109 +1,246 @@
 Sourceid,Title,SJR,field,octile
 12977,PLoS Biology,4.941,24,8
+14802,Soil Biology and Biochemistry,2.604,24,8
 15461,Biotechnology Advances,3.006,24,8
 16115,Nature Biotechnology,18.252,24,8
 16339,Metabolic Engineering,3.337,24,8
 17421,Cytokine and Growth Factor Reviews,3.006,24,8
+17435,EMBO Journal,7.058,24,8
+18483,Cellular Microbiology,2.52,24,8
+18797,Current Opinion in Immunology,4.839,24,8
 19136,Annals of the Rheumatic Diseases,7.699,24,8
+19614,Annual Review of Microbiology,7.361,24,8
+19651,Clinical Microbiology Reviews,11.301,24,8
 19669,Current Opinion in Microbiology,3.814,24,8
+19683,Environmental Microbiology,2.209,24,8
+19708,FEMS Microbiology Reviews,7.063,24,8
 20185,Allergy: European Journal of Allergy and Clinical Immunology,2.702,24,8
+20250,Journal of Virology,2.853,24,8
 20278,Microbiology and Molecular Biology Reviews,7.524,24,8
+20298,Molecular Microbiology,2.384,24,8
+20313,Nature Reviews Microbiology,17.634,24,8
+20651,Annual Review of Immunology,21.681,24,8
 20689,Autoimmunity Reviews,2.648,24,8
 20695,"Brain, Behavior, and Immunity",2.78,24,8
+20779,European Journal of Immunology,2.206,24,8
+20798,Immunity,13.393,24,8
 20810,Immunological Reviews,5.715,24,8
+20862,Trends in Microbiology,4.639,24,8
 20863,Trends in Parasitology,2.566,24,8
+21267,Journal of Allergy and Clinical Immunology,5.049,24,8
+21272,Journal of Experimental Medicine,8.615,24,8
+21275,Journal of Immunology,2.837,24,8
 21309,AIDS,2.919,24,8
 21315,Nature Immunology,14.007,24,8
+21318,Nature Reviews Immunology,28.786,24,8
 21359,Seminars in Immunology,4.509,24,8
+21365,Trends in Immunology,7.364,24,8
 21872,Eurosurveillance,3.727,24,8
+25454,Blood,6.434,24,8
+50032,Journal of Neuroinflammation,2.336,24,8
+130030,Proceedings of the Royal Society B: Biological Sciences,2.826,24,8
+3500148004,Cellular and Molecular Immunology,2.346,24,8
+3500148010,Current HIV/AIDS Reports,2.645,24,8
+4000151809,PLoS Pathogens,4.006,24,8
+4700152228,Molecular Systems Biology,8.504,24,8
 5300152732,Cell Host and Microbe,9.146,24,8
+5800173382,ISME Journal,4.813,24,8
 6300153105,Current Opinion in HIV and AIDS,2.286,24,8
+7100153107,Seminars in Immunopathology,2.874,24,8
 11400153331,Mucosal Immunology,4.314,24,8
 19400157151,DMM Disease Models and Mechanisms,2.427,24,8
+19700168103,mAbs,2.236,24,8
+19700175861,Gut Microbes,2.279,24,8
 19700188403,mBio,4.106,24,8
+19700201211,Cell Death and Disease,2.536,24,8
+19900192509,Current Opinion in Virology,2.69,24,8
 21100229161,Frontiers in Immunology,2.803,24,8
 21100232818,Emerging Microbes and Infections,2.433,24,8
 21100242814,eLife,7.121,24,8
+21100368204,Cancer immunology research,4.956,24,8
 21100399469,EcoSal Plus,2.174,24,8
+21100401152,Microbiome,5.171,24,8
 21100466864,Journal for ImmunoTherapy of Cancer,2.798,24,8
+16136,Reviews in Environmental Science and Biotechnology,1.615,24,7
 16785,Journal of NeuroVirology,1.475,24,7
+18571,Fungal Genetics and Biology,1.611,24,7
+18593,Microbial Cell Factories,1.443,24,7
 19240,Journal of Rheumatology,2.157,24,7
+19303,Xenotransplantation,1.469,24,7
+19603,Advances in Parasitology,1.579,24,7
+19617,Antiviral Research,1.925,24,7
+19618,Applied and Environmental Microbiology,1.684,24,7
 19662,Critical Reviews in Microbiology,1.658,24,7
 19687,Eukaryotic Cell,1.603,24,7
+19705,FEMS Microbiology Ecology,1.492,24,7
+19717,Food Microbiology,1.66,24,7
 20186,Transfusion,1.645,24,7
 20220,Journal of Bacteriology,1.885,24,7
+20356,Reviews in Medical Virology,1.957,24,7
 20723,Clinical and Experimental Allergy,1.979,24,7
 20734,Clinical and Experimental Immunology,1.431,24,7
+20740,Clinical Immunology,1.478,24,7
+20783,Expert Review of Vaccines,1.551,24,7
 20813,Immunology,1.69,24,7
+20823,Immunology and Cell Biology,2.085,24,7
 20886,Virology,1.728,24,7
+21245,International Immunology,2.167,24,7
+21268,Journal of Autoimmunity,2.046,24,7
+21270,Journal of Clinical Immunology,1.611,24,7
+21376,Vaccine,1.863,24,7
 22083,Cytokine,1.433,24,7
+22343,Infection and Immunity,1.954,24,7
 22379,International Journal for Parasitology,1.638,24,7
 22383,International Journal of Medical Microbiology,1.717,24,7
+22421,Journal of Clinical Virology,1.609,24,7
 22911,Malaria Journal,2.082,24,7
+23029,Retrovirology,1.855,24,7
+23122,Tropical Medicine and International Health,1.731,24,7
+25300,Journal of Viral Hepatitis,1.683,24,7
+27592,Arthritis Research and Therapy,2.154,24,7
 28861,Biometrics,2.14,24,7
+29152,"Cancer Immunology, Immunotherapy",1.899,24,7
 29607,Journal of Leukocyte Biology,2.04,24,7
+38062,Exercise Immunology Review,2.104,24,7
 40981,Biology and Fertility of Soils,1.692,24,7
 4400151713,International Journal of Biological Sciences,1.686,24,7
+5800173376,Biology Direct,1.694,24,7
+6300153114,Fungal Biology Reviews,1.676,24,7
+11600154504,Current Protocols in Immunology,2.172,24,7
+11700154702,Biotechnology for Biofuels,1.899,24,7
 17300154924,Epidemics,1.812,24,7
 17500154721,Parasites and Vectors,1.702,24,7
+19700175042,Journal of Inflammation Research,1.605,24,7
 19700176005,World Allergy Organization Journal,1.936,24,7
 19700176023,Virulence,1.635,24,7
+19700188364,Viruses,1.805,24,7
 21100197941,International Journal for Parasitology: Drugs and Drug Resistance,1.556,24,7
+21100206244,Open Biology,2.082,24,7
 21100226442,Frontiers in Microbiology,1.699,24,7
 21100228130,International Journal for Parasitology: Parasites and Wildlife,1.455,24,7
 21100255109,Frontiers in cellular and infection microbiology,1.703,24,7
+21100255413,OncoImmunology,1.77,24,7
 21100335701,Vaccines,1.691,24,7
+21100433120,Microbiology spectrum,1.814,24,7
+13076,Protist,1.291,24,6
 14133,Molecular and Biochemical Parasitology,1.109,24,6
+14156,Molecular Immunology,1.352,24,6
+14677,"Infection, Genetics and Evolution",1.278,24,6
 14957,Applied Microbiology and Biotechnology,1.182,24,6
 15477,Biotechnology and Bioengineering,1.372,24,6
 15577,Critical Reviews in Biotechnology,1.243,24,6
+15701,Pediatric Allergy and Immunology,1.371,24,6
 16085,Journal of Industrial Microbiology and Biotechnology,1.107,24,6
 16088,Journal of Nanobiotechnology,1.38,24,6
 16341,Expert Review of Anti-Infective Therapy,1.264,24,6
+17773,Mediators of Inflammation,1.37,24,6
+17905,Yeast,1.172,24,6
 19108,Tuberculosis,1.264,24,6
+19186,Clinical and Experimental Rheumatology,1.164,24,6
+19537,Veterinary Parasitology,1.275,24,6
+19607,Anaerobe,1.144,24,6
 19633,BMC Microbiology,1.242,24,6
 19710,FEMS Yeast Research,1.308,24,6
 19760,International Journal of Food Microbiology,1.366,24,6
 19781,Scandinavian Journal of Rheumatology,1.34,24,6
+20230,Journal of General Virology,1.325,24,6
+20264,Microbes and Infection,1.205,24,6
+20712,Cellular Immunology,1.355,24,6
 20761,Current Opinion in Allergy and Clinical Immunology,1.244,24,6
 20802,Vector-Borne and Zoonotic Diseases,1.181,24,6
 20808,Immunologic Research,1.198,24,6
+20815,Immunology and Allergy Clinics of North America,1.132,24,6
+20825,Immunology Letters,1.168,24,6
 20861,Systematic and Applied Microbiology,1.367,24,6
+20882,Veterinary Microbiology,1.175,24,6
+20888,Virus Research,1.147,24,6
 21250,International Reviews of Immunology,1.235,24,6
+21274,Journal of Immunological Methods,1.289,24,6
 21282,Journal of Interferon and Cytokine Research,1.167,24,6
 21301,Medical Microbiology and Immunology,1.287,24,6
+21787,American Journal of Tropical Medicine and Hygiene,1.43,24,6
+22129,Genes and Immunity,1.299,24,6
+22989,Parasite Immunology,1.173,24,6
 22993,Parasitology,1.194,24,6
+23046,Transactions of the Royal Society of Tropical Medicine and Hygiene,1.174,24,6
 25935,Cytotherapy,1.144,24,6
+110112,"Journal of immunotherapy (Hagerstown, Md. : 1997)",1.373,24,6
+4000148706,Clinical and Vaccine Immunology,1.32,24,6
+4400151516,Immunity and Ageing,1.218,24,6
+4700152872,Journal of NeuroImmune Pharmacology,1.379,24,6
 4900152305,Biotechnology journal,1.125,24,6
 5200153105,Zoonoses and Public Health,1.248,24,6
 5800207503,Future Microbiology,1.27,24,6
+9500153922,American Journal of Reproductive Immunology,1.21,24,6
+10300153305,Transboundary and Emerging Diseases,1.147,24,6
+19600161903,Molecular Oral Microbiology,1.21,24,6
+19700166804,Ticks and Tick-borne Diseases,1.421,24,6
 19700174631,"Allergy, Asthma and Immunology Research",1.239,24,6
+19700175206,Microbial Biotechnology,1.275,24,6
+21000196010,Topics in antiviral medicine,1.11,24,6
+21100241668,Pathogens and Disease,1.244,24,6
 21100258398,MicrobiologyOpen,1.158,24,6
+21100316035,Biology,1.324,24,6
 21100337905,Pathogens,1.421,24,6
+21100398775,Clinical and Translational Allergy,1.425,24,6
 13882,European Journal of Protistology,0.897,24,5
 14648,European Journal of Soil Biology,0.886,24,5
+14688,Inflammation,1.023,24,5
 15968,Journal of Medical Virology,0.978,24,5
 16052,International Biodeterioration and Biodegradation,1.086,24,5
 16078,Journal of Biotechnology,0.929,24,5
+16749,Journal of Neuroimmunology,1.083,24,5
 17689,Avian Pathology,0.871,24,5
+17778,Medical and Veterinary Entomology,0.909,24,5
 19034,Microbial Drug Resistance,0.957,24,5
 19624,Archives of Virology,0.973,24,5
 19660,"Comparative Immunology, Microbiology and Infectious Diseases",0.877,24,5
+19761,International Journal of Systematic and Evolutionary Microbiology,0.943,24,5
 19773,Rheumatology International,0.906,24,5
+20223,Journal of Eukaryotic Microbiology,0.879,24,5
+20233,Journal of Medical Microbiology,0.914,24,5
+20237,Journal of Microbiology,0.911,24,5
 20241,Journal of Virological Methods,0.858,24,5
+20267,Microbiological Research,1.03,24,5
 20268,Microbiology,0.924,24,5
+20337,Parasite,0.893,24,5
+20340,Parasitology Research,0.991,24,5
 20491,Journal of Medical Entomology,0.962,24,5
+20649,"Annals of Allergy, Asthma and Immunology",1.042,24,5
 20652,Archivum Immunologiae et Therapiae Experimentalis,0.946,24,5
+20691,BMC Immunology,0.993,24,5
+20737,Clinical and Molecular Allergy,0.933,24,5
 20752,Critical Reviews in Immunology,1.022,24,5
+20753,Current Allergy and Asthma Reports,1.049,24,5
+20775,Developmental and Comparative Immunology,0.899,24,5
+20805,Immunobiology,1.1,24,5
 21244,International Archives of Allergy and Immunology,0.989,24,5
+21284,Journal of Reproductive Immunology,0.997,24,5
+21288,Acta Tropica,1.052,24,5
 21336,NeuroImmunoModulation,1.064,24,5
+21357,Scandinavian Journal of Immunology,0.891,24,5
+21771,AIDS Research and Human Retroviruses,1.066,24,5
+22271,Immunogenetics,0.916,24,5
 22410,Inflammation Research,1.062,24,5
 22411,Inflammopharmacology,0.925,24,5
 22432,International Immunopharmacology,1.051,24,5
+22994,Parasitology International,0.914,24,5
+24899,Photodermatology Photoimmunology and Photomedicine,1.026,24,5
+25711,Biodegradation,0.876,24,5
+27974,Frontiers in Bioscience - Landmark,0.963,24,5
+51565,International Dairy Journal,1.051,24,5
+130015,Foodborne Pathogens and Disease,1.063,24,5
 130035,Virology Journal,1.053,24,5
 4700153004,AIDS Research and Therapy,1.08,24,5
+4800153101,Expert Review of Clinical Immunology,1.097,24,5
 12100157191,Innate immunity,1.031,24,5
 19700175057,Immunotherapy,0.986,24,5
+19700175786,HIV/AIDS - Research and Palliative Care,1.032,24,5
 19700201534,Beneficial microbes,0.962,24,5
+19700202609,Autoimmunity Highlights,0.945,24,5
+20500195020,Gut Pathogens,1.066,24,5
 21100200427,Human Vaccines and Immunotherapeutics,0.984,24,5
+21100225613,Human gene therapy methods,0.894,24,5
+21100230018,BioMed Research International,0.935,24,5
 21100258853,F1000Research,0.926,24,5
+21100469670,Antibiotics,1.063,24,5

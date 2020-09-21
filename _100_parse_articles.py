@@ -11,7 +11,6 @@ from collections import Counter, defaultdict
 from configparser import ConfigParser
 from glob import glob
 from itertools import combinations
-from json import JSONDecodeError
 from math import ceil
 from os.path import basename, splitext
 
@@ -23,6 +22,7 @@ from _002_sample_journals import write_panel
 
 
 SOURCE_FOLDER = "./002_journal_samples/"
+CORRECTION_FILE = "./095_affiliation_correction/countries.csv"
 AFFILIATION_BLACKLIST = "./097_affiliation_blacklist/blacklist.csv"
 COUNTRY_WHITELIST = "./098_country_whitelist/oecd_others.csv"
 COUNTRYCOMB_FOLDER = "./100_country_combinations/"
@@ -31,9 +31,9 @@ META_FOLDER = "./100_meta_counts/"
 OUTPUT_FOLDER = "./990_output/"
 
 START = 1996  # The first year of our data
-END = 2018  # The last year of our data
-DOCUMENT_TYPES = set(['ar'])
-CHUNK_SIZE = 1500000  # To keep file sizes small
+END = 2019  # The last year of our data
+DOCUMENT_TYPES = set(['ar', 're', 'no', 'cp', 'ip', 'sh'])
+CHUNK_SIZE = 1300000  # Limit files to this number of lines
 
 # Countries we look at
 _country_whitelist = set(pd.read_csv(COUNTRY_WHITELIST)['country'])
@@ -43,8 +43,11 @@ df.index = df.index.astype(str)
 df['children'] = df['children'].str.split(', ').apply(set)
 _affiliation_blacklist = df['children'].to_dict()
 # Auxiliary containers
-_aff_countries = {}
+_aff_countries = pd.read_csv(CORRECTION_FILE, dtype=object)
+_aff_countries = _aff_countries.set_index("scopus_id")["country"].to_dict()
 _aff_types = {}
+_aff_missing_countries = set()
+_aff_missing_types = set()
 # Definitions
 config = ConfigParser()
 config.optionxform = str
@@ -60,16 +63,6 @@ def count_pages(s):
         return int(parts[1]) - int(parts[0])
     except (AttributeError, IndexError, ValueError):
         return None
-
-
-def get_articles(journals, year, refresh=False):
-    """Get list of published articles from a set of journals."""
-    res = []
-    for source_id in journals:
-        q = "SOURCE-ID({}) AND PUBYEAR IS {}".format(source_id, year)
-        new = query(q, refresh=refresh)
-        res.extend(new or [])
-    return [p for p in res if p.subtype and p.subtype in DOCUMENT_TYPES]
 
 
 def get_affiliations(doc):
@@ -94,23 +87,24 @@ def get_affiliations(doc):
     return affs, len(nonorg)
 
 
-def get_country(aff):
+def get_country(aff_id, refresh=200):
     """Get country of an affiliation."""
     try:
-        return _aff_countries[aff]
+        country = _aff_countries[aff_id]
     except KeyError:
         try:
-            country = ContentAffiliationRetrieval(aff).country
+            aff = ContentAffiliationRetrieval(aff_id, refresh=refresh)
+            country = aff.country or None
         except ScopusException:
             country = None
         if not country:
-            country = ""
+            _aff_missing_countries.add(aff_id)
         country = _country_map.get(country, country)
-        _aff_countries[aff] = country
-        return country
+        _aff_countries[aff_id] = country
+    return country
 
 
-def get_type(aff_ids):
+def get_type(aff_ids, refresh=200):
     """Return types of affiliations recorded by Scopus."""
     out = []
     for aff_id in aff_ids:
@@ -119,60 +113,52 @@ def get_type(aff_ids):
             aff_type = _aff_types[aff_id]
         except KeyError:
             try:
-                aff_type = ContentAffiliationRetrieval(aff_id).org_type
-                aff_type = aff_type.split("|")[0]
-            except ScopusException as e:
+                aff = ContentAffiliationRetrieval(aff_id, refresh=refresh)
+                aff_type = aff.org_type.split("|")[0]
+            except (AttributeError, ScopusException):
                 aff_type = None
             aff_type = _aff_map.get(aff_type, aff_type)
             _aff_types[aff_id] = aff_type
         if not aff_type:
-            print(aff_id)
+            _aff_missing_types.add(aff_id)
             continue
         out.append(aff_type)
     return tuple(sorted(out, reverse=True))
 
 
-def panel_write_or_add(fname, data, field):
+def panel_write_or_add(fname, value, field, year):
     """Write DataFrame with information on yearly counts to a file that might
     already exist.
     """
     try:
         df = pd.read_csv(fname, index_col=0)
-        df.index = df.index.astype(str)
     except FileNotFoundError:
         df = pd.DataFrame()
-    df[field] = pd.Series(data)
-    df.index.name = "year"
+    df.loc[year, field] = value
     df = df[sorted(df.columns)]
-    df.to_csv(fname)
+    df = df.sort_index()
+    df.to_csv(fname, index_label="year")
 
 
-def query(q, refresh=False):
-    """Wrapper function for query of a journal-year combination."""
-    try:
-        s = ScopusSearch(q, refresh=refresh)
-    except JSONDecodeError:
-        s = ScopusSearch(q, refresh=True)
-    n = s.get_results_size()
-    try:
-        return s.results
-    except KeyError:
-        if n < 6000:
-            return robust_query(q, refresh=True)
-        else:
-            res = []
-            for i in range(0, 10):
-                q_1 = q + " AND EID(*{})".format(i)
-                res.extend(robust_query(q_1))
-            return res
+def print_progress(iteration, total, length=50):
+    """Print terminal progress bar."""
+    share = iteration / float(total)
+    filled_len = int(length * iteration // total)
+    bar = "█" * filled_len + "-" * (length - filled_len)
+    print(f"\rProgress: |{bar}| {share:.2%} complete", end="\r")
+    if iteration == total:
+        print()
 
 
-def robust_query(q, refresh=False):
+def robust_query(q, refresh=False, fields=["eid", "coverDate"]):
     """Wrapper function for individual ScopusSearch query."""
     try:
-        return ScopusSearch(q, refresh=refresh).results
-    except KeyError:
-        return ScopusSearch(q, refresh=True).results
+        s = ScopusSearch(q, refresh=refresh,
+                         integrity_fields=fields)
+        res = s.results
+    except (AttributeError, KeyError):
+        res = ScopusSearch(q, refresh=True).results
+    return res or []
 
 
 def write_combinations(d, fname):
@@ -187,95 +173,95 @@ def write_combinations(d, fname):
 
 
 def main():
+    order = ["eid", "source_id", "year", "author", "author_count", "affiliations",
+             "country", "inst_types", "multiaff", "foreign_multiaff"]
     # Parse each field individually
     for f in glob(SOURCE_FOLDER + "*.csv"):
         asjc = splitext(basename(f))[0]
         if asjc == 'journal-counts':
             continue
         source_ids = pd.read_csv(f)['Sourceid'].tolist()
-        print(">>> Now working on field {}...".format(asjc))
-        country_shares = defaultdict(
-                lambda: {'total': set(), 'with multiaff': set(),
-                         'with foreign multiaff': set()})
-        au_unique = defaultdict(lambda: None)
-        au_unique["all"] = set()
-        p_unique = defaultdict(lambda: None)
-        use_unique = defaultdict(lambda: None)
-        p_nonorg = defaultdict(lambda: 0)
-        obs_nonorg = defaultdict(lambda: 0)
-        docs = []
+        n_sources = len(source_ids)
+        print(f">>> Working on field {asjc} using up to {n_sources} sources...")
         for year in range(START, END+1):
-            # Get articles
-            res = get_articles(source_ids, year)
-            total = len(res)
-            # Filter articles with missing author or affiliation information
-            res = [p for p in res if p.author_afids and p.author_ids]
-            print("...{}: {:,} ({:,}) articles ".format(year, total, len(res)))
             # Containers
+            n_pubs = 0
+            n_useful = 0
+            n_nonorgp = 0
+            n_nonorgo = 0
             country_combinations = defaultdict(lambda: defaultdict(lambda: 0))
-            # Parse information document-wise
-            for p in res:
-                authors = p.author_ids.split(";")
-                affs, nonorg = get_affiliations(p)
-                if nonorg:  # At least one author-affiliation obs not useful
-                    p_nonorg[year] += 1
-                # Parse information author-wise
-                for auth, aff in zip(authors, affs):
-                    if auth in ("1", "8"):  # Anonymous author or group
-                        continue
-                    if not aff:  # Author has non-org affiliation
-                        obs_nonorg[year] += 1
-                        continue
-                    countries = [get_country(a) for a in aff]
-                    first_country = countries[0]  # Country of first affiliation
-                    if first_country not in _country_whitelist:
-                        continue
-                    country_shares[("all", year)]["total"].add(auth)
-                    country_shares[(first_country, year)]["total"].add(auth)
-                    types = "-".join(get_type(aff))
-                    multiaff = int(len(aff) > 1) or None
-                    if multiaff:
-                        country_shares[("all", year)]["with multiaff"].add(auth)
-                        country_shares[(first_country, year)]["with multiaff"].add(auth)
-                        for comb in combinations(sorted(countries), 2):
-                            country_combinations[comb[0]][comb[1]] += 1
-                    foreign_aff = int(len(set(countries)) > 1) or None
-                    if foreign_aff:
-                        country_shares[("all", year)]["with foreign multiaff"].add(auth)
-                        country_shares[(first_country, year)]["with foreign multiaff"].add(auth)
-                    new = [p.eid, p.source_id, year, auth, p.author_count,
-                           first_country, types, multiaff, foreign_aff]
-                    docs.append(new)
+            docs = []
+            print(f"... processing publications for {year}...")
+            print_progress(0, n_sources)
+            for i, source_id in enumerate(source_ids):
+                q = f"SOURCE-ID({source_id}) AND PUBYEAR IS {year}"
+                pubs = robust_query(q, refresh=600)
+                pubs = [p for p in pubs if p.subtype and
+                        p.subtype in DOCUMENT_TYPES]
+                n_pubs += len(pubs)
+                pubs = [p for p in pubs if p.author_afids and p.author_ids]
+                n_useful += len(pubs)
+                # Parse information document-wise
+                print_progress(i+1, n_sources)
+                for i, pub in enumerate(pubs):
+                    authors = pub.author_ids.split(";")
+                    affs, nonorg = get_affiliations(pub)
+                    if nonorg:  # At least one author-affiliation obs not useful
+                        n_nonorgp += 1
+                    # Parse information author-wise
+                    for auth, auth_affs in zip(authors, affs):
+                        if auth in ("1", "8"):  # Anonymous author or group
+                            continue
+                        if not auth_affs:  # Author has non-org affiliation
+                            n_nonorgo += 1
+                            continue
+                        # Country-information
+                        countries = [get_country(a) for a in auth_affs]
+                        first_country = countries[0]  # Country of first affiliation
+                        if first_country not in _country_whitelist:
+                            continue
+                        countries = list(filter(None, countries))
+                        if not countries:
+                            continue
+                        foreign_aff = int(len(set(countries)) > 1) or None
+                        # Type-information
+                        types = "-".join(get_type(auth_affs))
+                        multiaff = int(len(auth_affs) > 1) or None
+                        if multiaff:
+                            for comb in combinations(sorted(countries), 2):
+                                country_combinations[comb[0]][comb[1]] += 1
+                        # Finalize
+                        new = [pub.eid, source_id, year, auth, pub.author_count,
+                               ";".join(auth_affs), first_country, types,
+                               multiaff, foreign_aff]
+                        docs.append(new)
 
+            # Write documents in chunks
+            docs = pd.DataFrame(docs, columns=order)[order].set_index("eid")
+            n_chunks = ceil(docs.shape[0]/CHUNK_SIZE)
+            for chunk in range(n_chunks):
+                if n_chunks == 1:
+                    fname = f"{ARTICLES_FOLDER}articles_{asjc}-{year}.csv"
+                else:
+                    fname = f"{ARTICLES_FOLDER}articles_{asjc}-{year}_{chunk}.csv"
+                start = (chunk)*CHUNK_SIZE
+                end = (chunk+1)*CHUNK_SIZE
+                docs.iloc[start:end].to_csv(fname)
+            del docs
             # Combinations of countries of multiaffs
-            fname = "{}{}_{}.csv".format(COUNTRYCOMB_FOLDER, asjc, year)
+            fname = f"{COUNTRYCOMB_FOLDER}{asjc}_{year}.csv"
             write_panel(country_combinations, fname, sort=True)
             # Statistics
-            year = str(year)
-            p_unique[year] = total
-            use_unique[year] = len(res)
-            au_unique[year] = len(country_shares[("all", int(year))]["total"])
-            au_unique["all"].update(country_shares[("all", int(year))]["total"])
+            combs = [("unique_papers", n_pubs), ("nonorg_papers", n_nonorgp),
+                     ("nonorg_obs", n_nonorgo), ("unique_papers-useful", n_useful)]
+            for stub, data in combs:
+                fname = f"{META_FOLDER}num_{stub}.csv"
+                panel_write_or_add(fname, data, asjc, year)
 
-        # Write out information on articles in chunks
-        cols = ["eid", "source_id", "year", "author", "author_count",
-                "country", "inst_types", "multiaff", "foreign_multiaff"]
-        out = pd.DataFrame(docs, columns=cols)[cols]
-        n_chunks = ceil(out.shape[0]/CHUNK_SIZE)
-        for chunk in range(n_chunks):
-            fname = "{}articles_{}-{}.csv".format(ARTICLES_FOLDER, asjc, chunk)
-            start = (chunk)*CHUNK_SIZE
-            end = (chunk+1)*CHUNK_SIZE
-            out.iloc[start:end].set_index("eid").to_csv(fname)
-
-        # Statistics
-        au_unique["all"] = len(au_unique["all"])
-        combs = [("unique_papers", p_unique), ("unique_papers-useful", use_unique),
-                 ("unique_authors", au_unique), ("nonorg_papers", p_nonorg),
-                 ("nonorg_obs", obs_nonorg)]
-        for stub, data in combs:
-            fname = "{}num_{}.csv".format(META_FOLDER, stub)
-            panel_write_or_add(fname, data, asjc)
+    print(f">>> {len(_aff_missing_countries)} aff profiles w/o country: "
+          f"{', '.join(sorted(_aff_missing_countries))}")
+    print(f">>> {len(_aff_missing_types)} aff profiles w/o type: "
+          f"{', '.join(sorted(_aff_missing_types))}")
 
 
 if __name__ == '__main__':
