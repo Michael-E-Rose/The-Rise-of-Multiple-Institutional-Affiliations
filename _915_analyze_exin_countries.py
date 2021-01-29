@@ -11,7 +11,8 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 
-from _910_plot_multiaff_shares import add_figure_letter, format_time_axis
+from _110_rank_affiliations import format_time_axis
+from _910_analyze_multiaff_shares import add_figure_letter
 
 COUNTRY_WHITELIST = "./098_country_whitelist/oecd_others.csv"
 SOURCE_FOLDER = "./105_multiaff_shares/"
@@ -44,17 +45,17 @@ def make_stackedgroup_lineplot(dfs, hues, fname, y="multiaffshare", x="year",
         ax.set_ylim(bottom=0)
         add_figure_letter(ax, i)
         handles, labels = ax.get_legend_handles_labels()
-        ax.legend(handles=handles[1:], labels=labels[1:], loc="upper left")
+        ax.legend(handles=handles[0:], labels=labels[0:], loc="upper left")
     format_time_axis(axes[-1], dfs[-1][x].min(), dfs[-1][x].max(), length=6)
     # Save
     plt.savefig(fname, bbox_inches="tight")
-    plt.close()
+    plt.close(fig)
 
 
 def main():
     # Create long country-year information indicating group membership
-    country = pd.read_csv(COUNTRY_WHITELIST, usecols=["country", "EI"])
-    exins =  country.dropna().set_index("country")["EI"].to_dict()
+    country = pd.read_csv(COUNTRY_WHITELIST, usecols=["country", "EI"], encoding="utf8")
+    exins = country.dropna().set_index("country")["EI"].to_dict()
     years = sorted(range(1996, 2020))
     countries = sorted(country["country"])
     dummy = pd.DataFrame({"country": sorted(countries*len(years)),
@@ -81,7 +82,8 @@ def main():
 
     # Read share counts
     aggs = ("country", "countryfield")
-    files = {agg: pd.read_csv(f"{SOURCE_FOLDER}by{agg}.csv") for agg in aggs}
+    files = {agg: pd.read_csv(f"{SOURCE_FOLDER}by{agg}.csv", encoding="utf8")
+             for agg in aggs}
 
     # Make plots of shares by group by aggregation
     ma_label = "Share of authors w/ multiple affiliations (in %)"
@@ -92,9 +94,15 @@ def main():
         selected = df[mask_selected].copy()
         selected.loc[df[ei_label] == "Control group", "label"] = "Control group"
         selected[ei_label] = selected[ei_label].fillna("Control group")
+        # Make figure
         fname = f"{OUTPUT_FOLDER}Figures/multiaff_groups-{label}.pdf"
         make_stackedgroup_lineplot([selected, df],  hues=["label", ei_label],
                                    fname=fname, ylabel=ma_label)
+        # Make corresponding table
+        means = pd.pivot_table(selected, values="multiaffshare",
+                               index="Excellence Initiative", columns="year")
+        fname = f"{OUTPUT_FOLDER}Tables/multiaff_groups-{label}.tex"
+        means.to_latex(fname, float_format="%.1f", index_names=False)
 
 
 if __name__ == '__main__':

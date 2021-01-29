@@ -2,18 +2,21 @@
 # Author:   Michael E. Rose <Michael.Ernst.Rose@gmail.com>
 """Ranks affiliations by occurrence and plots most frequent ones."""
 
-from collections import defaultdict, Counter
+from collections import Counter
 from configparser import ConfigParser
 from glob import glob
 from itertools import combinations
+from random import sample
 
+import matplotlib
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 from pybliometrics.scopus import ContentAffiliationRetrieval
+from pybliometrics.scopus.exception import Scopus404Error
 
+from _100_parse_articles import START, END
 from _105_aggregate_shares import print_progress
-from _910_plot_multiaff_shares import format_time_axis
 
 SOURCE_FOLDER = "./100_source_articles/"
 TARGET_FOLDER = "./110_affiliation_rankings/"
@@ -21,11 +24,41 @@ OUTPUT_FOLDER = "./990_output/"
 
 RANK_CUTOFF = 4  # Number of highest ranked affiliations for plot
 
+matplotlib.use('Agg')
 config = ConfigParser()
 config.optionxform = str
 config.read("./graphs.cfg")
 plt.rcParams['font.family'] = config["styles"]["font"]
 sns.set(style=config["styles"]["style"], font=config["styles"]["font"])
+
+
+def format_time_axis(ax, _min, _max, labels=False, length=4):
+    """Format axis with years such that the axis displays the end points."""
+    from numpy import arange, append, ceil
+    # Set endpoints
+    ax.set_xlim(_min, _max)
+    # Set locations
+    start, end = ax.get_xlim()
+    step = int(ceil((end-start)/length))
+    ticks = arange(start, end, step)
+    ticks = append(ticks, end)
+    ticks = [int(n) for n in ticks]
+    ax.xaxis.set_ticks(ticks)
+    # Set labels
+    if labels:
+        labels = arange(_min.year, _max.year, step)
+        labels = append(labels, _max.year)
+        ax.set_xticklabels(labels)
+    # Aesthetics
+    ax.set_xlabel("")
+
+
+def read_ma_source_file(f):
+    """Read MA observations of source files."""
+    cols = ['affiliations', "eid", "author"]
+    df = pd.read_csv(f, encoding="utf8", usecols=cols)
+    df["affiliations"] = df["affiliations"].str.split(";")
+    return df[df["affiliations"].str.len() > 1]
 
 
 def select_and_write(counted):
@@ -36,7 +69,6 @@ def select_and_write(counted):
         df.columns = ["occurrence"]
         df = df.sort_values("occurrence", ascending=False)
         top.update(df.head(RANK_CUTOFF).index)
-        label = "indiv"
         if isinstance(df.iloc[0].name, tuple):
             label = "pair"
             df.index = pd.MultiIndex.from_tuples(df.index)
@@ -53,32 +85,24 @@ def select_and_write(counted):
 
 def main():
     # Count affiliations
-    indiv_counts = defaultdict(lambda: Counter())
-    pair_counts = defaultdict(lambda: Counter())
-    totals = pd.Series(dtype="uint64")
-    files = glob(SOURCE_FOLDER + '*.csv')
-    total = len(files)
-    print(">>> Reading source files...")
-    print_progress(0, total)
-    cols = ["year", "affiliations", "multiaff"]
-    for idx, f in enumerate(files):
-        # Read file
-        data = pd.read_csv(f, usecols=cols)
-        data = data.dropna().drop("multiaff", axis=1)
-        totals = totals.append(data["year"].value_counts())
-        data["affiliations"] = data["affiliations"].str.split(";")
-        for y in data["year"].unique():
-            subset = data[data["year"] == y]
-            solo = [a for sl in subset["affiliations"] for a in sl]
-            indiv_counts[y].update(Counter(solo))
-            pairs = [combinations(sl, 2) for sl in subset["affiliations"]]
-            c = Counter([tuple(sorted(p)) for sl in pairs for p in sl])
-            pair_counts[y].update(c)
-        print_progress(idx+1, total)
-    totals.name = "n_obs"
-    totals.index.name = "year"
-    n_obs = totals.reset_index().groupby("year").sum()
-    del totals
+    indiv_counts = {}
+    pair_counts = {}
+    totals = pd.Series(dtype="uint64", name="n_obs")
+    print(">>> Counting affiliations from source files year-wise...")
+    years = range(START, END+1)
+    print_progress(0, len(years))
+    for i, year in enumerate(years):
+        # Read files by year
+        files = glob(f"{SOURCE_FOLDER}*{year}*.csv")
+        df = pd.concat([read_ma_source_file(f) for f in files])
+        dup_cols = ["eid", "author"]
+        df = df.drop_duplicates(subset=dup_cols).drop(dup_cols, axis=1)
+        totals.loc[year] = df.shape[0]
+        indiv_counts[year] = Counter([a for sl in df["affiliations"] for a in sl])
+        pairs = [combinations(sl, 2) for sl in df["affiliations"]]
+        pair_counts[year] = Counter([tuple(sorted(p)) for sl in pairs for p in sl])
+        print_progress(i+1, len(years))
+        del df
 
     # Write yearly rankings
     print(">>> Writing yearly rankings...")
@@ -92,15 +116,17 @@ def main():
     # Collect data for plotting
     print(f">>> Plotting {len(tops_indiv)} affiliations")
     df = pd.DataFrame()
+    all_afids = set()
     for year, data in indiv_counts.items():
         new = pd.DataFrame.from_dict(data, orient="index")
+        all_afids.update(new.index)
         new["year"] = year
         df = df.append(new.reindex(tops_indiv))
     info = {aff_id: ContentAffiliationRetrieval(aff_id).affiliation_name
             for aff_id in tops_indiv}
     df["affiliation"] = pd.Series(info)
     df = (df.rename(columns={0: "occurrence"})
-            .merge(n_obs, left_on="year", right_index=True))
+            .merge(totals, left_on="year", right_index=True))
     df["occurrence_norm"] = df["occurrence"]/df["n_obs"]*100
 
     # Make plot
@@ -117,6 +143,21 @@ def main():
     fname = OUTPUT_FOLDER + "Figures/top-affs.pdf"
     fig.savefig(fname, bbox_inches="tight")
     plt.close(fig)
+
+    # Count affiliations by type
+    nonorg_afids = {a for a in all_afids if a.startswith("1")}
+    n_nonorg = len(nonorg_afids)
+    print(f">>> {len(all_afids) - n_nonorg:,} org affiliation IDs")
+    print(f">>> {n_nonorg:,} org affiliation IDs")
+
+    # Randomly analyze some nonorg affiliation IDs
+    print(">>> Random non-org affiliation names")
+    for aff_id in sample(tuple(nonorg_afids), 100):
+        try:
+            aff = ContentAffiliationRetrieval(aff_id, refresh=20)
+            print(aff.affiliation_name)
+        except Scopus404Error:
+            print("doesn't exist")
 
 
 if __name__ == '__main__':

@@ -2,43 +2,72 @@
 
 clear all
 cap log close
-log using ./200_regression_master/building.log, replace
 
 * READ IN
-cap cd ".\100_source_articles"
-tempfile building
-save `building', emptyok
+cap cd ".\100_source_articles\"
 
-local myfilelist : dir . files"*.csv"
-foreach file of local myfilelist {
+foreach j of numlist 1996/2019 {
+	tempfile building`j'
+	save `building'`j', emptyok replace
+}
+
+foreach j of numlist 1996/2019 {
+   	local myfilelist : dir . files "*`j'*.csv"     
+	di `j'
+	di `myfilelist' 
+	foreach file of local myfilelist {
 	drop _all
 	import delimited `"`file'"'
+	drop type 
 	gen field = ""
 	local outfile = subinstr("`file'",".csv","",.)
 	local outfile2 = subinstr("`outfile'","-","",.)
 	local field = substr("`outfile2'", 10,2)
+	local year = substr("`outfile2'", -6,4)
 	replace field = "`field'" if field == ""
-	drop affiliations inst_types
-	append using "`building'"
+	destring field, replace
+	gen year = `year'
+	gen byte multiaff = (strpos(affiliations, ";") > 0)
+	gen aggregation = substr(countries, 1, strpos(countries, "-")-1)
+	replace aggregation = countries if aggregation == ""
 	di `field'
-	compress
-	save `building', replace
+	drop affiliations countries
+	append using "`building'`j'"
+	duplicates drop eid author year, force 
+	save `building'`j', replace
 }
+}
+
+tempfile final
+save `final', emptyok
+use `building'1996, clear
+foreach j of numlist 1996/2019 {
+    append using "`building'`j'"
+	*bys eid author year: replace fieldcount = _n
+	*reshape wide field, i(eid author year) j(fieldcount)
+	*qui tab field, gen(field_)	
+	*collapse (max) field_* (first) aggregation source_id author_count year multiaff, by(eid author)
+	*cap drop fieldcount
+	duplicates drop eid author year, force 
+	save `final', replace
+}
+	
+	
+
+	*tab field, gen(field_)	
+	*collapse (max) field_* (first) affiliations aggregation source_id author_count year multiaff, by(eid author)
+	
 cd ..
 
-* FORMAT VARIABLES
-for var foreign_multiaff multiaff: replace X = 0 if X == .
-
-replace field = subinstr(field,"3-","13",.)
-replace field = subinstr(field,"_1","13",.)
-
-destring field, replace
-
 label variable field "scientific field"
-label define field 11 "Agri_Bio" 12 "ArtsHumanities" 13 "Bioechm_Gen_Molbio" 14 "Management" 16 "Chemistry" 17 "Computer" 19 "Earth" 20 "Economics" 22 "Engin" 24 "Immunology" 26 "Math" 28 "Neuroscience" 27 "Medicine" 29 "Nursing" 30 "Pharmacology" 31 "Physics" 33 "Social"
+label define field 11 "Agri_Bio" 12 "ArtsHumanities" 13 "Bioechm_Gen_Molbio" ///
+	14 "Management" 15 "ChemEngi" 16 "Chemistry" 17 "Computer" 18 "Decision" ///
+	19 "Earth" 20 "Economics" 21 "Energy" 22 "Engin" 23 "Environ" ///
+	24 "Immunology" 25 "MatSci" 26 "Math" 27 "Medicine" 28 "Neuroscience" ///
+	29 "Nursing" 30 "Pharmacology" 31 "Physics" 33 "Social" 34 "Veterinary" ///
+	35 "Dentistry" 36 "Health"
 label values field field
-
-rename country aggregation
+ 
 replace aggregation = subinstr(aggregation, " ", "", .)
 
 * EXCELLENCE INITIATIVE MARKER
@@ -103,4 +132,3 @@ foreach l of local levels {
 
 compress
 save ./200_regression_master/master.dta, replace
-log close

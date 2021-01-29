@@ -35,14 +35,6 @@ def read_file(fname):
     return df.dropna()
 
 
-def write_panel(d, fname, digits=3, sort=False):
-    """Convert a one-level nested dict into a DataFrame and save it."""
-    df = pd.DataFrame(d).round(digits)
-    if sort:
-        df = df[sorted(df.columns)]
-    df.to_csv(fname)
-
-
 def write_stats(stat_dct):
     """Write out textfiles as "filename: content" pair."""
     for key, cont in stat_dct.items():
@@ -86,7 +78,7 @@ def main():
         # Write out
         fname = TARGET_FOLDER + field + ".csv"
         out = out.sort_values(['octile', 'Sourceid'], ascending=[False, True])
-        out.to_csv(fname, index=False)
+        out.to_csv(fname, index=False, encoding="utf8")
         new["Used"] = out.shape[0]
         counts[field] = new.copy()
 
@@ -96,7 +88,8 @@ def main():
           f"{mean(journal_fields):.2f} fields on average of which "
           f"{sum([x > 1 for x in journal_fields]):,} belong to more "
           f"than one field (max {max(journal_fields):,} fields)")
-    write_panel(counts, TARGET_FOLDER + "journal-counts.csv")
+    out = pd.DataFrame(counts).round(3)
+    out.to_csv(TARGET_FOLDER + "journal-counts.csv")
     stats["N_of_journals_useful"] = len(useful)
     stats["N_of_journals_used"] = len(journal_fields)
     write_stats(stats)

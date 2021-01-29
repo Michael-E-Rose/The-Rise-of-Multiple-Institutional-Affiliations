@@ -11,7 +11,7 @@ import seaborn as sns
 
 from _002_sample_journals import write_stats
 from _105_aggregate_shares import read_source_files
-from _910_plot_multiaff_shares import format_time_axis
+from _110_rank_affiliations import format_time_axis
 
 SOURCE_FOLDER = "./100_source_articles/"
 OUTPUT_FOLDER = "./990_output/"
@@ -75,11 +75,13 @@ def make_shares_table(fname, df):
 
 def main():
     # Read in
-    dtypes = {"author_count": "uint8", "multiaff": "float32", "year": "uint16"}
-    df = read_source_files(["eid", "year", "author_count", "multiaff"],
+    dtypes = {"author_count": "uint8"}
+    df = read_source_files(["eid", "author_count", "affiliations"],
                            drop_duplicates=["eid"], dtype=dtypes)
     write_stats({"N_of_authorpaper": df.shape[0]})
     df["solo"] = (df["author_count"] == 1)*1
+    df["multiaff"] = (df["affiliations"].str.find(";") != -1).astype("uint8")
+    df = df.drop(["affiliations", "author_count"], axis=1)
 
     # Graph with shares
     fname = OUTPUT_FOLDER + "Figures/solo-multiaff_shares-paper-all.pdf"

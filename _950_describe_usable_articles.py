@@ -3,15 +3,14 @@
 """Describe raw data used and share of useable papers."""
 
 from configparser import ConfigParser
+from glob import glob
 
 import pandas as pd
-from numpy import int32, int64
 
-from _002_sample_journals import write_stats
-from _105_aggregate_shares import read_source_files
-from _910_plot_multiaff_shares import make_stacked_lineplot
+from _910_analyze_multiaff_shares import make_stacked_lineplot
 
 JOURNAL_FOLDER = "./002_journal_samples/"
+SOURCE_FOLDER = "./100_source_articles/"
 COUNTS_FOLDER = "./100_meta_counts/"
 OUTPUT_FOLDER = "./990_output/"
 
@@ -24,11 +23,6 @@ config.read("./definitions.cfg")
 asjc_map = dict(config["field names"])
 
 
-def count_unique(data):
-    """Count the number of unique elements."""
-    return data.nunique()
-
-
 def format_shares(df, val_name):
     """Melt wide DataFrame and replace field codes with field names."""
     df.columns = [asjc_map.get(c, c) for c in df.columns]
@@ -39,16 +33,6 @@ def format_shares(df, val_name):
               .sort_values("field"))
 
 
-def latex_formatter(x):
-    """Add thousands separator to large numbers."""
-    if isinstance(x, (int, int32, int64)):
-        return f'{x:,}'.replace(".0", "")
-    elif isinstance(x, str):
-        return x
-    else:
-        return "{:0.2f}".format(x)
-
-
 def read_from_statistics(fname):
     """Read number from statistics text files."""
     fname = f"{OUTPUT_FOLDER}Statistics/{fname}.txt"
@@ -57,80 +41,75 @@ def read_from_statistics(fname):
 
 
 def main():
-    # LaTeX table on authors and papers by country, and statistics
-    dtypes = {"author": "uint64", "year": "uint16"}
-    df = read_source_files(["country", "author", "eid", "year"], dtype=dtypes)
-    df["country"] = df["country"].astype("category")
-    articles_unique = df['eid'].nunique()
-    authoryear = df.groupby(["author", "year"]).count()
-    stats = {"N_of_articles_unique": articles_unique,
-             "N_of_authoryear": authoryear.shape[0],
-             "N_of_authorpaperfield": df.shape[0]}
-    write_stats(stats)
-    grouped = df.groupby(["country"]).agg(
-        Articles=pd.NamedAgg(column='eid', aggfunc=count_unique),
-        Authors=pd.NamedAgg(column='author', aggfunc=count_unique))
-    del df
-    cols = grouped.columns
-    mult_cols = [(c, "Unique") for c in cols]
-    grouped.columns = pd.MultiIndex.from_tuples(mult_cols)
-    for c in cols:
-        label = (c, "Unique")
-        total = grouped[label].sum()
-        grouped[(c, "Share (in %)")] = round(grouped[label]/total*100, 2)
-    grouped.index.name = "Country"
-    grouped[("Authors", "Unique")] = grouped[("Authors", "Unique")].astype(int)
-    grouped = grouped[sorted(grouped.columns, key=lambda t: t[0])]
-    fname = OUTPUT_FOLDER + "Tables/articlesauthors_country.tex"
-    grouped.to_latex(fname, formatters=[latex_formatter]*(grouped.shape[1]),
-                     multicolumn_format='c',)
-
-    # Read meta information
-    journals = pd.read_csv(JOURNAL_FOLDER + "journal-counts.csv", index_col=0).T
-    journals = journals[["Total", "Coverage > 5 years", "Used"]]
-    journals = journals.rename(columns={"Used": "Sampled for Study"})
-    authors = pd.read_csv(COUNTS_FOLDER + "num_unique_authors.csv", index_col=0).T
-    papers = pd.read_csv(COUNTS_FOLDER + "num_unique_papers.csv", index_col=0)
-    useable = pd.read_csv(COUNTS_FOLDER + "num_unique_papers-useful.csv", index_col=0)
-    nonorg = pd.read_csv(COUNTS_FOLDER + "num_nonorg_papers.csv", index_col=0)
+    # Compute number of authors by field
+    author_counts = pd.Series(dtype="uint64")
+    for field in asjc_map.keys():
+        authors = set()
+        for f in glob(f"{SOURCE_FOLDER}articles_{field}-*.csv"):
+            df = pd.read_csv(f, encoding="utf8", usecols=["author"])
+            authors.update(df["author"].unique())
+        author_counts[field] = len(authors)
 
     # LaTeX table with authors and papers by field
+    fname = JOURNAL_FOLDER + "journal-counts.csv"
+    journals = pd.read_csv(fname, index_col=0, encoding="utf8").T
+    journals = journals[["Total", "Coverage > 5 years", "Used"]]
+    journals = journals.rename(columns={"Used": "Sampled"})
     overall = journals.copy()
     cols = [("Journals", c) for c in overall.columns]
     overall.columns = pd.MultiIndex.from_tuples(cols)
-    overall[("Authors", "Total")] = authors["all"]
-    overall[("Articles", "Total")] = papers.sum(axis=0)
-    overall[("Articles", "Used in Study")] = useable.sum(axis=0)
-    share = overall[("Articles", "Used in Study")]/overall[("Articles", "Total")]*100
+
+    # Add columns
+    fname = COUNTS_FOLDER + "num_publications.csv"
+    publications = pd.read_csv(fname, index_col=0, encoding="utf8")
+    overall[("Articles", "Sampled")] = publications.sum(axis=0)
+    fname = COUNTS_FOLDER + "num_articles.csv"
+    articles = pd.read_csv(fname, index_col=0, encoding="utf8")
+    overall[("Articles", "research-type")] = articles.sum(axis=0)
+    fname = COUNTS_FOLDER + "num_useful.csv"
+    useful = pd.read_csv(fname, index_col=0, encoding="utf8")
+    overall[("Articles", "Useful")] = useful.sum(axis=0)
+    fname = COUNTS_FOLDER + "num_used.csv"
+    used = pd.read_csv(fname, index_col=0, encoding="utf8")
+    overall[("Articles", "Used")] = used.sum(axis=0)
+    share = overall[("Articles", "Used")]/overall[("Articles", "Sampled")]*100
     overall[("Articles", "Share (in %)")] = round(share, 2)
-    overall = overall.sort_index()
-    # Add column totals
-    overall.loc["Unique"] = [""] * overall.shape[1]
-    journals_total = read_from_statistics("N_of_journals_unique")
-    overall.loc["Unique", ("Journals", "Total")] = journals_total
-    journals_useful = read_from_statistics("N_of_journals_useful")
-    overall.loc["Unique", ("Journals", "Coverage > 5 years")] = journals_useful
-    journals_used = read_from_statistics("N_of_journals_used")
-    overall.loc["Unique", ("Journals", "Sampled for Study")] = journals_used
-    overall.loc["Unique", ("Authors", "Total")] = authors_unique
-    overall.loc["Unique", ("Articles", "Used in Study")] = articles_unique
+    overall[("Authors", "Used")] = author_counts
+
+    # Sort alphabetically
     overall.index = [asjc_map.get(f, f) for f in overall.index]
     overall.index.name = "Field"
+    overall = overall.sort_index()
+
+    # Add row for totals
+    overall.loc["Unique"] = [None] * overall.shape[1]
+    totals = [(("Journals", "Total"), "N_of_journals_unique"),
+              (("Journals", "Coverage > 5 years"), "N_of_journals_useful"),
+              (("Journals", "Sampled"), "N_of_journals_used"),
+              (("Articles", "Used"), "N_of_articles_unique"),
+              (("Authors", "Used"), "N_of_authors_unique")]
+    for col, fname in totals:
+        overall.loc["Unique", col] = read_from_statistics(fname)
+
     # Write out
+    overall = overall.astype(float)
     fname = OUTPUT_FOLDER + "Tables/overview_useable.tex"
-    overall.to_latex(fname, multicolumn_format='c',
-                     formatters=[latex_formatter]*overall.shape[1])
+    overall.to_latex(fname, float_format=lambda x: f"{x:,.0f}", na_rep="",
+                     formatters={('Articles', 'Share (in %)'): lambda x: f"{x:,}"},
+                     multicolumn_format='c')
 
     # Graph on shares of usable articles by field
-    share_use = useable.div(papers)*100
-    label_use = "Share of articles w/ useable affiliation information"
+    share_use = useful.div(articles)*100
+    label_use = "Share of papers w/ useable affiliation information"
     share_use = format_shares(share_use, label_use)
-    share_org = 100-nonorg.div(papers)*100
-    label_org = "Share of articles w/ complete affiliation information"
+    fname = COUNTS_FOLDER + "num_nonorg_papers.csv"
+    nonorg = pd.read_csv(fname, index_col=0, encoding="utf8")
+    share_org = 100-nonorg.div(articles)*100
+    label_org = "Share of papers w/ complete affiliation information"
     share_org = format_shares(share_org, label_org)
     fname = OUTPUT_FOLDER + "Figures/useable_share_field.pdf"
-    make_stacked_lineplot((share_use, share_org), (label_use, label_org),
-                          fname, hue="field")
+    make_stacked_lineplot(dfs=(share_use, share_org), ys=(label_use, label_org),
+                          ylabels=(label_use, label_org), fname=fname, hue="field")
 
 
 if __name__ == '__main__':
